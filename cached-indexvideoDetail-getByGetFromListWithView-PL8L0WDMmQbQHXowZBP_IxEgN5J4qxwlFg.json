@@ -1,0 +1,701 @@
+  <html>
+<head>
+      <title>Videos by List PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg</title>
+
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.w3schools.com/tags/demo_icon.gif" type="image/gif" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="views/videoDetail/mystyle.css">
+  <!-- Bootstrap v4.x stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<!-- bootstrap css theme -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/docs/css/bootstrap-v4.min.css">
+
+	<script src="https://mottie.github.io/tablesorter/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+	<!-- pager plugin -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+	<script src="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+	<style>
+	.tablesorter-pager .btn-group-sm .btn {
+	  font-size: 1.2em; /* make pager arrows more visible */
+	}
+	</style>
+  <script>
+  $(function() {
+
+  $("table").tablesorter({
+    theme : "bootstrap",
+
+    widthFixed: true,
+
+    // widget code contained in the jquery.tablesorter.widgets.js file
+    // use the zebra stripe widget if you plan on hiding any rows (filter widget)
+    // the uitheme widget is NOT REQUIRED!
+    widgets : [ "filter", "columns", "zebra" ],
+
+    widgetOptions : {
+      // using the default zebra striping class name, so it actually isn't included in the theme variable above
+      // this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+      zebra : ["even", "odd"],
+
+      // class names added to columns when sorted
+      columns: [ "primary", "secondary", "tertiary" ],
+
+      // reset filters button
+      filter_reset : ".reset",
+
+      // extra css class name (string or array) added to the filter element (input or select)
+      filter_cssFilter: [
+        'form-control',
+        'form-control',
+        'form-control custom-select', // select needs custom class names :(
+        'form-control',
+        'form-control',
+        'form-control',
+        'form-control'
+      ]
+
+    }
+  })
+  .tablesorterPager({
+
+    // target the pager markup - see the HTML block below
+    container: $(".ts-pager"),
+
+    // target the pager page select dropdown - choose a page
+    cssGoto  : ".pagenum",
+
+    // remove rows from the table to speed up the sort of large tables.
+    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+    removeRows: false,
+
+    // output string - default is '{page}/{totalPages}';
+    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+
+  });
+
+});
+  </script></head>
+<body>
+
+<div class="contentItem">
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="/admin/">Home page</a></button>
+	  <div class="dropdown-content">
+		<a href="?c=listDetail&a=getAllWithView&k=1">get All ListDetail</a>
+		<a title="Them list videos moi" target="_blank" href="youtube/">Add New</a>
+		<a title="Xoa trung lap video + listDetail" target="_blank" href="removeDuplicate.php">Remove Duplicate</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Them list videos moi" target="_blank" href="youtube/">Add New By Youtube</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Tao Cache cho Videos + remove cac videos va list bi trung lap" target="_blank" href="/cache/">Gen cache</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">get All VideosDetail</button>
+	  <div class="dropdown-content">
+		<a href="?c=videoDetail&a=getAllWithView&k=0">get All VideosDetail(>10s)</a>
+		<a href="#">Add New</a>
+		<a href="#">Remove</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo CategoryID</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 Смотрели
+ (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 Новое видео
+ (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 Новости (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 Beginnners
+ (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 прослушивание
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 грамматика (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 Запас слов (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 чтение (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 Письмо
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 Произношение (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 Говорящий (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 Экзамены (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 Русские песни (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 Русский фильм (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 Русский для детей (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 Изучение на русском языке (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 Жизнь на русском языке (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 Покупка
+ (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 питание (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 разговор
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 Путешествовать (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 Курс (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 История
+ (6)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List tang dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 nachrichten (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 russian (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (7)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List giam dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 russian (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 nachrichten (0)</a>	  </div>
+	</div>
+	<br/>
+	<br/>
+	<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 nachrichten L(0) - v:(0)</a> |<a title='Số Lists của category này(3) - Số Videos của category này:(59)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food L(3) - v:(59)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(85)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners L(4) - v:(85)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(106)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids L(4) - v:(106)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(33)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping L(4) - v:(33)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(137)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening L(5) - v:(137)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(154)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar L(5) - v:(154)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(122)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading L(5) - v:(122)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(68)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing L(5) - v:(68)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(65)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation L(5) - v:(65)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(113)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking L(5) - v:(113)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(112)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs L(5) - v:(112)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(157)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film L(5) - v:(157)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(100)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study L(5) - v:(100)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(123)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 russian L(5) - v:(123)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(128)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation L(5) - v:(128)</a> |<a title='Số Lists của category này(6) - Số Videos của category này:(135)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel L(6) - v:(135)</a> |<a title='Số Lists của category này(6) - Số Videos của category này:(208)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course L(6) - v:(208)</a> |<a title='Số Lists của category này(6) - Số Videos của category này:(197)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story L(6) - v:(197)</a> |<a title='Số Lists của category này(7) - Số Videos của category này:(128)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary L(7) - v:(128)</a> |<a title='Số Lists của category này(7) - Số Videos của category này:(100)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams L(7) - v:(100)</a> |<br/>Số lượng Videos trong DB: 2330 Videos<br/>Số lượng List trong DB: 102 Listt</div>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kw" value="" placeholder="search here">
+	<input type="submit" name="submit" value="search name videos">
+</form>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kwl" value="" placeholder="search name List here">
+	<input type="submit" name="submit" value="search name List videos">
+</form><br/>
+<h1>Tat ca video co trong co so du lieu</h1>
+
+
+<table class="table table-bordered table-striped">
+  <thead> <!-- add class="thead-inverse" for a dark header -->
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video count</th>
+      <th>Add too</th>
+      <th>Xoa</th>
+	</tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video Duration</th>
+      <th>Add Videos to the List</th>
+      <th>Xoa</th>
+    </tr>
+    <tr>
+      <th colspan="7" class="ts-pager">
+        <div class="form-inline">
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary first" title="first">⇤</button>
+            <button type="button" class="btn btn-secondary prev" title="previous">←</button>
+          </div>
+          <span class="pagedisplay"></span>
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary next" title="next">→</button>
+            <button type="button" class="btn btn-secondary last" title="last">⇥</button>
+          </div>
+          <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+          </select>
+          <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select page number"></select>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+	
+   <tr>
+      <td>2198</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2198" title="Как любят русских в Сербии. С братьев денег не берём!"><img width="100px" src="https://i.ytimg.com/vi/M819SIRJE0g/mqdefault.jpg" alt="Как любят русских в Сербии. С братьев денег не берём!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2198" title="Как любят русских в Сербии. С братьев денег не берём!">Как любят русских в Сербии. С братьев денег не берём!</a></td>
+      <td>00:18:33</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2198" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2199</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2199" title="Вы просто совсем не знаете русских"><img width="100px" src="https://i.ytimg.com/vi/TqwbWWRH1vI/mqdefault.jpg" alt="Вы просто совсем не знаете русских"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2199" title="Вы просто совсем не знаете русских">Вы просто совсем не знаете русских</a></td>
+      <td>00:01:58</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2199" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2200</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2200" title="Русский народ самый древний на земле. Мавро Орбини."><img width="100px" src="https://i.ytimg.com/vi/Qfz4_3bbf1w/mqdefault.jpg" alt="Русский народ самый древний на земле. Мавро Орбини."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2200" title="Русский народ самый древний на земле. Мавро Орбини.">Русский народ самый древний на земле. Мавро Орбини.</a></td>
+      <td>00:17:57</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2200" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2201</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2201" title="Эпоха Русской Америки и её Главный правитель капитан Врангель."><img width="100px" src="https://i.ytimg.com/vi/FGf2_cP3mBg/mqdefault.jpg" alt="Эпоха Русской Америки и её Главный правитель капитан Врангель."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2201" title="Эпоха Русской Америки и её Главный правитель капитан Врангель.">Эпоха Русской Америки и её Главный правитель капитан Врангель.</a></td>
+      <td>00:14:30</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2201" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2202</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2202" title="Другой взгляд на привычное."><img width="100px" src="https://i.ytimg.com/vi/XKWm2B62Cf0/mqdefault.jpg" alt="Другой взгляд на привычное."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2202" title="Другой взгляд на привычное.">Другой взгляд на привычное.</a></td>
+      <td>00:06:51</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2202" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2203</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2203" title="Так кто у кого позаимствовал письменность?"><img width="100px" src="https://i.ytimg.com/vi/ASuUJZL9t1g/mqdefault.jpg" alt="Так кто у кого позаимствовал письменность?"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2203" title="Так кто у кого позаимствовал письменность?">Так кто у кого позаимствовал письменность?</a></td>
+      <td>00:09:23</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2203" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2204</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2204" title="Весёлое лицо настоящего Русского человека."><img width="100px" src="https://i.ytimg.com/vi/8XXV_vUYTbk/mqdefault.jpg" alt="Весёлое лицо настоящего Русского человека."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2204" title="Весёлое лицо настоящего Русского человека.">Весёлое лицо настоящего Русского человека.</a></td>
+      <td>00:02:55</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2204" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2205</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2205" title="Русь в Крыму раньше татар!? «Въ лѣто 6576»"><img width="100px" src="https://i.ytimg.com/vi/E-lhqKPQg6c/mqdefault.jpg" alt="Русь в Крыму раньше татар!? «Въ лѣто 6576»"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2205" title="Русь в Крыму раньше татар!? «Въ лѣто 6576»">Русь в Крыму раньше татар!? «Въ лѣто 6576»</a></td>
+      <td>00:03:18</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2205" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2206</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2206" title="Две Жанны о стране."><img width="100px" src="https://i.ytimg.com/vi/g2KvEzgJUv0/mqdefault.jpg" alt="Две Жанны о стране."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2206" title="Две Жанны о стране.">Две Жанны о стране.</a></td>
+      <td>00:03:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2206" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2207</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2207" title="Мы русские, какой восторг! Александр Суворов"><img width="100px" src="https://i.ytimg.com/vi/fj0avGrl9cM/mqdefault.jpg" alt="Мы русские, какой восторг! Александр Суворов"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2207" title="Мы русские, какой восторг! Александр Суворов">Мы русские, какой восторг! Александр Суворов</a></td>
+      <td>00:03:41</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2207" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2208</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2208" title="Что нужно знать русскому человеку про Ивана IV Грозного"><img width="100px" src="https://i.ytimg.com/vi/nyI54KzZJQU/mqdefault.jpg" alt="Что нужно знать русскому человеку про Ивана IV Грозного"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2208" title="Что нужно знать русскому человеку про Ивана IV Грозного">Что нужно знать русскому человеку про Ивана IV Грозного</a></td>
+      <td>00:08:22</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2208" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2209</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2209" title="Где Русь настоящая? Чье она наследство?"><img width="100px" src="https://i.ytimg.com/vi/FLafOJj-Vfg/mqdefault.jpg" alt="Где Русь настоящая? Чье она наследство?"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2209" title="Где Русь настоящая? Чье она наследство?">Где Русь настоящая? Чье она наследство?</a></td>
+      <td>00:17:25</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2209" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2210</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2210" title="Кавказ."><img width="100px" src="https://i.ytimg.com/vi/0qoZK0AuhQE/mqdefault.jpg" alt="Кавказ."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2210" title="Кавказ.">Кавказ.</a></td>
+      <td>00:02:21</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2210" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2211</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2211" title="Заслуги Саввы Мамонтова перед страной и нацией колоссальны"><img width="100px" src="https://i.ytimg.com/vi/HTUwK7OhJ5k/mqdefault.jpg" alt="Заслуги Саввы Мамонтова перед страной и нацией колоссальны"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2211" title="Заслуги Саввы Мамонтова перед страной и нацией колоссальны">Заслуги Саввы Мамонтова перед страной и нацией колоссальны</a></td>
+      <td>00:17:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2211" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2212</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2212" title="Форт Росс - символ владений Российской империи в Америке"><img width="100px" src="https://i.ytimg.com/vi/pTRoQdYBQWI/mqdefault.jpg" alt="Форт Росс - символ владений Российской империи в Америке"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2212" title="Форт Росс - символ владений Российской империи в Америке">Форт Росс - символ владений Российской империи в Америке</a></td>
+      <td>00:09:19</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2212" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2213</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2213" title="Светлое место."><img width="100px" src="https://i.ytimg.com/vi/I_1338Tcj7I/mqdefault.jpg" alt="Светлое место."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2213" title="Светлое место.">Светлое место.</a></td>
+      <td>00:08:44</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2213" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2214</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2214" title="Истории от Олеся Бузины: Русь триединая или москали название не крали"><img width="100px" src="https://i.ytimg.com/vi/KMd7N_S5BCo/mqdefault.jpg" alt="Истории от Олеся Бузины: Русь триединая или москали название не крали"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2214" title="Истории от Олеся Бузины: Русь триединая или москали название не крали">Истории от Олеся Бузины: Русь триединая или москали название не крали</a></td>
+      <td>00:00:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2214" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2215</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2215" title="В искусственной информационной изоляции. Николай Губенко."><img width="100px" src="https://i.ytimg.com/vi/sKFeyzHGpFM/mqdefault.jpg" alt="В искусственной информационной изоляции. Николай Губенко."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2215" title="В искусственной информационной изоляции. Николай Губенко.">В искусственной информационной изоляции. Николай Губенко.</a></td>
+      <td>00:09:01</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2215" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2216</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2216" title="БОГ говорил по-русски!"><img width="100px" src="https://i.ytimg.com/vi/TFmbZg8dzWk/mqdefault.jpg" alt="БОГ говорил по-русски!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2216" title="БОГ говорил по-русски!">БОГ говорил по-русски!</a></td>
+      <td>00:12:25</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2216" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2217</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2217" title="Русские были такими всегда. Такими и останутся."><img width="100px" src="https://i.ytimg.com/vi/lhDFKX7COAE/mqdefault.jpg" alt="Русские были такими всегда. Такими и останутся."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2217" title="Русские были такими всегда. Такими и останутся.">Русские были такими всегда. Такими и останутся.</a></td>
+      <td>00:05:37</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2217" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2218</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2218" title="Забытые русские шахматы Таврели"><img width="100px" src="https://i.ytimg.com/vi/ZygUuoGpSKY/mqdefault.jpg" alt="Забытые русские шахматы Таврели"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2218" title="Забытые русские шахматы Таврели">Забытые русские шахматы Таврели</a></td>
+      <td>00:10:22</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2218" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2219</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2219" title="Его имя стало легендой."><img width="100px" src="https://i.ytimg.com/vi/gS-DXUneIkI/mqdefault.jpg" alt="Его имя стало легендой."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2219" title="Его имя стало легендой.">Его имя стало легендой.</a></td>
+      <td>00:18:37</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2219" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2220</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2220" title="Человек удивительной судьбы. Судьба пограничника"><img width="100px" src="https://i.ytimg.com/vi/9nVGwQILyI4/mqdefault.jpg" alt="Человек удивительной судьбы. Судьба пограничника"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2220" title="Человек удивительной судьбы. Судьба пограничника">Человек удивительной судьбы. Судьба пограничника</a></td>
+      <td>00:12:52</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2220" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2221</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2221" title="Русский Вандам - Алексей Едрихин"><img width="100px" src="https://i.ytimg.com/vi/A3YP6kwCOLs/mqdefault.jpg" alt="Русский Вандам - Алексей Едрихин"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2221" title="Русский Вандам - Алексей Едрихин">Русский Вандам - Алексей Едрихин</a></td>
+      <td>00:15:42</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2221" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2222</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2222" title="Материально я живу хорошо. Морально - плохо"><img width="100px" src="https://i.ytimg.com/vi/fQDDMTIUYXc/mqdefault.jpg" alt="Материально я живу хорошо. Морально - плохо"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2222" title="Материально я живу хорошо. Морально - плохо">Материально я живу хорошо. Морально - плохо</a></td>
+      <td>00:20:35</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2222" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2223</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2223" title="У русского народа вся Европа в неоплатном долгу!"><img width="100px" src="https://i.ytimg.com/vi/ek7dPPdWWWM/mqdefault.jpg" alt="У русского народа вся Европа в неоплатном долгу!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2223" title="У русского народа вся Европа в неоплатном долгу!">У русского народа вся Европа в неоплатном долгу!</a></td>
+      <td>00:02:16</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2223" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2224</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2224" title="Почему русские не должны за всех платить и каяться"><img width="100px" src="https://i.ytimg.com/vi/FnUtmEtDCWk/mqdefault.jpg" alt="Почему русские не должны за всех платить и каяться"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2224" title="Почему русские не должны за всех платить и каяться">Почему русские не должны за всех платить и каяться</a></td>
+      <td>00:05:12</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2224" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2225</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2225" title="Солнечный круг. Урал - опорный край державы. Рассказ"><img width="100px" src="https://i.ytimg.com/vi/qGINpGSR3FY/mqdefault.jpg" alt="Солнечный круг. Урал - опорный край державы. Рассказ"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2225" title="Солнечный круг. Урал - опорный край державы. Рассказ">Солнечный круг. Урал - опорный край державы. Рассказ</a></td>
+      <td>00:06:31</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2225" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2226</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2226" title="Как готовят интеллектуальную силу Сибири"><img width="100px" src="https://i.ytimg.com/vi/XBBQ57zGAyw/mqdefault.jpg" alt="Как готовят интеллектуальную силу Сибири"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2226" title="Как готовят интеллектуальную силу Сибири">Как готовят интеллектуальную силу Сибири</a></td>
+      <td>00:18:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2226" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2227</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2227" title="Тот самый Лев Сергеевич Термен"><img width="100px" src="https://i.ytimg.com/vi/c55W91mIuhA/mqdefault.jpg" alt="Тот самый Лев Сергеевич Термен"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2227" title="Тот самый Лев Сергеевич Термен">Тот самый Лев Сергеевич Термен</a></td>
+      <td>00:17:23</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2227" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2228</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2228" title="Антиалкогольный бунт в России"><img width="100px" src="https://i.ytimg.com/vi/10LUnZWmlUI/mqdefault.jpg" alt="Антиалкогольный бунт в России"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2228" title="Антиалкогольный бунт в России">Антиалкогольный бунт в России</a></td>
+      <td>00:15:42</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2228" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2229</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2229" title="Помните видеосалоны - входная плата рубль"><img width="100px" src="https://i.ytimg.com/vi/kUIWt8mabyI/mqdefault.jpg" alt="Помните видеосалоны - входная плата рубль"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2229" title="Помните видеосалоны - входная плата рубль">Помните видеосалоны - входная плата рубль</a></td>
+      <td>00:14:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2229" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2230</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2230" title="Частное мнение."><img width="100px" src="https://i.ytimg.com/vi/qv7CIuFhpwg/mqdefault.jpg" alt="Частное мнение."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2230" title="Частное мнение.">Частное мнение.</a></td>
+      <td>00:03:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2230" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2231</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2231" title="500 русских против 40 000 персов"><img width="100px" src="https://i.ytimg.com/vi/OUAROgIyeHE/mqdefault.jpg" alt="500 русских против 40 000 персов"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2231" title="500 русских против 40 000 персов">500 русских против 40 000 персов</a></td>
+      <td>00:12:59</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2231" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2232</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2232" title="История. Взгляд в прошлое."><img width="100px" src="https://i.ytimg.com/vi/1uUUNYLl3oA/mqdefault.jpg" alt="История. Взгляд в прошлое."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2232" title="История. Взгляд в прошлое.">История. Взгляд в прошлое.</a></td>
+      <td>00:04:40</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2232" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2233</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2233" title="Россия страна мастеров Иван Петрович Кулибин"><img width="100px" src="https://i.ytimg.com/vi/JKBziMcy5Os/mqdefault.jpg" alt="Россия страна мастеров Иван Петрович Кулибин"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2233" title="Россия страна мастеров Иван Петрович Кулибин">Россия страна мастеров Иван Петрович Кулибин</a></td>
+      <td>00:10:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2233" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2234</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2234" title="Михаил Анчаров, первый бард России, повлиял на Высоцкого своим творчеством"><img width="100px" src="https://i.ytimg.com/vi/TfmhqNRuLpY/mqdefault.jpg" alt="Михаил Анчаров, первый бард России, повлиял на Высоцкого своим творчеством"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2234" title="Михаил Анчаров, первый бард России, повлиял на Высоцкого своим творчеством">Михаил Анчаров, первый бард России, повлиял на Высоцкого своим творчеством</a></td>
+      <td>00:03:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2234" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2235</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2235" title="Иван Охлобыстин - Правильные Дети Русского Мира"><img width="100px" src="https://i.ytimg.com/vi/nPd3XhWryjs/mqdefault.jpg" alt="Иван Охлобыстин - Правильные Дети Русского Мира"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2235" title="Иван Охлобыстин - Правильные Дети Русского Мира">Иван Охлобыстин - Правильные Дети Русского Мира</a></td>
+      <td>00:01:46</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2235" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2236</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2236" title="О русских Праздниках."><img width="100px" src="https://i.ytimg.com/vi/5qXx7XWe9Ec/mqdefault.jpg" alt="О русских Праздниках."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2236" title="О русских Праздниках.">О русских Праздниках.</a></td>
+      <td>00:02:34</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2236" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2237</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2237" title="Когда мы честно складываем оружие, остальные его поднимают и прицеливаются"><img width="100px" src="https://i.ytimg.com/vi/kPOjXu_8zgg/mqdefault.jpg" alt="Когда мы честно складываем оружие, остальные его поднимают и прицеливаются"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2237" title="Когда мы честно складываем оружие, остальные его поднимают и прицеливаются">Когда мы честно складываем оружие, остальные его поднимают и прицеливаются</a></td>
+      <td>00:04:31</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2237" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2238</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2238" title="Родина."><img width="100px" src="https://i.ytimg.com/vi/dVLwSzZhPP0/mqdefault.jpg" alt="Родина."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2238" title="Родина.">Родина.</a></td>
+      <td>00:11:10</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2238" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2239</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2239" title="Путин, Трамп и агенты ФСБ. Клим Подкова"><img width="100px" src="https://i.ytimg.com/vi/jJ4C0kfjKIY/mqdefault.jpg" alt="Путин, Трамп и агенты ФСБ. Клим Подкова"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2239" title="Путин, Трамп и агенты ФСБ. Клим Подкова">Путин, Трамп и агенты ФСБ. Клим Подкова</a></td>
+      <td>00:04:21</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2239" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2240</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2240" title="Михаил Ножкин: «Я не за красных или белых, а за русских»"><img width="100px" src="https://i.ytimg.com/vi/SW5rsCjkSUw/mqdefault.jpg" alt="Михаил Ножкин: «Я не за красных или белых, а за русских»"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2240" title="Михаил Ножкин: «Я не за красных или белых, а за русских»">Михаил Ножкин: «Я не за красных или белых, а за русских»</a></td>
+      <td>00:21:57</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2240" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2241</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2241" title="Любовь и зависть к России."><img width="100px" src="https://i.ytimg.com/vi/pMlX-OIRbGk/mqdefault.jpg" alt="Любовь и зависть к России."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2241" title="Любовь и зависть к России.">Любовь и зависть к России.</a></td>
+      <td>00:10:45</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2241" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2242</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2242" title="«Союз русского народа»"><img width="100px" src="https://i.ytimg.com/vi/dRMJjucW7uI/mqdefault.jpg" alt="«Союз русского народа»"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2242" title="«Союз русского народа»">«Союз русского народа»</a></td>
+      <td>00:16:42</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2242" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2243</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2243" title="Как кот с мышками."><img width="100px" src="https://i.ytimg.com/vi/porvennoLDU/mqdefault.jpg" alt="Как кот с мышками."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2243" title="Как кот с мышками.">Как кот с мышками.</a></td>
+      <td>00:04:53</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2243" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2244</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2244" title="История, произошедшая в ТЦ в латвийской столице."><img width="100px" src="https://i.ytimg.com/vi/rBJSJE8HPeY/mqdefault.jpg" alt="История, произошедшая в ТЦ в латвийской столице."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2244" title="История, произошедшая в ТЦ в латвийской столице.">История, произошедшая в ТЦ в латвийской столице.</a></td>
+      <td>00:02:26</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2244" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2245</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2245" title="Новые рассказы от Клима Подковы."><img width="100px" src="https://i.ytimg.com/vi/3svrLhZgW-c/mqdefault.jpg" alt="Новые рассказы от Клима Подковы."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2245" title="Новые рассказы от Клима Подковы.">Новые рассказы от Клима Подковы.</a></td>
+      <td>00:12:05</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2245" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2246</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2246" title="Три новых рассказа от Клима Подковы"><img width="100px" src="https://i.ytimg.com/vi/CzibGlMh1Ec/mqdefault.jpg" alt="Три новых рассказа от Клима Подковы"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2246" title="Три новых рассказа от Клима Подковы">Три новых рассказа от Клима Подковы</a></td>
+      <td>00:12:05</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2246" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2247</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2247" title="Из чего собирается Родина."><img width="100px" src="https://i.ytimg.com/vi/rVeUMqrpEm8/mqdefault.jpg" alt="Из чего собирается Родина."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2247" title="Из чего собирается Родина.">Из чего собирается Родина.</a></td>
+      <td>00:09:07</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL8L0WDMmQbQHXowZBP_IxEgN5J4qxwlFg" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2247" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   </tbody>
+
+</table>
+</div>
+</body></html>

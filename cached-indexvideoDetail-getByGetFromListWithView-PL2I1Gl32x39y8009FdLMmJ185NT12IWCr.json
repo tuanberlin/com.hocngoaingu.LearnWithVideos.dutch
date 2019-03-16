@@ -1,0 +1,696 @@
+  <html>
+<head>
+      <title>Videos by List PL2I1Gl32x39y8009FdLMmJ185NT12IWCr</title>
+
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.w3schools.com/tags/demo_icon.gif" type="image/gif" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="views/videoDetail/mystyle.css">
+  <!-- Bootstrap v4.x stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<!-- bootstrap css theme -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/docs/css/bootstrap-v4.min.css">
+
+	<script src="https://mottie.github.io/tablesorter/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+	<!-- pager plugin -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+	<script src="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+	<style>
+	.tablesorter-pager .btn-group-sm .btn {
+	  font-size: 1.2em; /* make pager arrows more visible */
+	}
+	</style>
+  <script>
+  $(function() {
+
+  $("table").tablesorter({
+    theme : "bootstrap",
+
+    widthFixed: true,
+
+    // widget code contained in the jquery.tablesorter.widgets.js file
+    // use the zebra stripe widget if you plan on hiding any rows (filter widget)
+    // the uitheme widget is NOT REQUIRED!
+    widgets : [ "filter", "columns", "zebra" ],
+
+    widgetOptions : {
+      // using the default zebra striping class name, so it actually isn't included in the theme variable above
+      // this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+      zebra : ["even", "odd"],
+
+      // class names added to columns when sorted
+      columns: [ "primary", "secondary", "tertiary" ],
+
+      // reset filters button
+      filter_reset : ".reset",
+
+      // extra css class name (string or array) added to the filter element (input or select)
+      filter_cssFilter: [
+        'form-control',
+        'form-control',
+        'form-control custom-select', // select needs custom class names :(
+        'form-control',
+        'form-control',
+        'form-control',
+        'form-control'
+      ]
+
+    }
+  })
+  .tablesorterPager({
+
+    // target the pager markup - see the HTML block below
+    container: $(".ts-pager"),
+
+    // target the pager page select dropdown - choose a page
+    cssGoto  : ".pagenum",
+
+    // remove rows from the table to speed up the sort of large tables.
+    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+    removeRows: false,
+
+    // output string - default is '{page}/{totalPages}';
+    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+
+  });
+
+});
+  </script></head>
+<body>
+
+<div class="contentItem">
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="/admin/">Home page</a></button>
+	  <div class="dropdown-content">
+		<a href="?c=listDetail&a=getAllWithView&k=1">get All ListDetail</a>
+		<a title="Them list videos moi" target="_blank" href="youtube/">Add New</a>
+		<a title="Xoa trung lap video + listDetail" target="_blank" href="removeDuplicate.php">Remove Duplicate</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Them list videos moi" target="_blank" href="youtube/">Add New By Youtube</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Tao Cache cho Videos + remove cac videos va list bi trung lap" target="_blank" href="/cache/">Gen cache</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">get All VideosDetail</button>
+	  <div class="dropdown-content">
+		<a href="?c=videoDetail&a=getAllWithView&k=0">get All VideosDetail(>10s)</a>
+		<a href="#">Add New</a>
+		<a href="#">Remove</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo CategoryID</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 Bekeken (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 Nieuwe video (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 Beginners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 Audition (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 Grammatica (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 Woordenschat
+
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 Lezing
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 Schrift (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 Uitspraak (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 Sprekend (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 Tentamen (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 Zang (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 Russische film (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 Video's voor kinderen (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 studeren in holland (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 leven in Nederland (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 Kopen (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 Voedsel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 Gesprek (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 Reizen (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 Cursus (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 Verhaal (6)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List tang dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (7)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List giam dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a>	  </div>
+	</div>
+	<br/>
+	<br/>
+	<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos L(0) - v:(0)</a> |<a title='Số Lists của category này(3) - Số Videos của category này:(21)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking L(3) - v:(21)</a> |<a title='Số Lists của category này(3) - Số Videos của category này:(102)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film L(3) - v:(102)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(150)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners L(4) - v:(150)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(133)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar L(4) - v:(133)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(89)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing L(4) - v:(89)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(94)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids L(4) - v:(94)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(40)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study L(4) - v:(40)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(138)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch L(4) - v:(138)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(45)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping L(4) - v:(45)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(129)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary L(5) - v:(129)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(109)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading L(5) - v:(109)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(41)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation L(5) - v:(41)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(114)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams L(5) - v:(114)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(196)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs L(5) - v:(196)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(113)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food L(5) - v:(113)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(175)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation L(5) - v:(175)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(62)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel L(5) - v:(62)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(200)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course L(5) - v:(200)</a> |<a title='Số Lists của category này(6) - Số Videos của category này:(64)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story L(6) - v:(64)</a> |<a title='Số Lists của category này(7) - Số Videos của category này:(209)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening L(7) - v:(209)</a> |<br/>Số lượng Videos trong DB: 2224 Videos<br/>Số lượng List trong DB: 92 Listt</div>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kw" value="" placeholder="search here">
+	<input type="submit" name="submit" value="search name videos">
+</form>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kwl" value="" placeholder="search name List here">
+	<input type="submit" name="submit" value="search name List videos">
+</form><br/>
+<h1>Tat ca video co trong co so du lieu</h1>
+
+
+<table class="table table-bordered table-striped">
+  <thead> <!-- add class="thead-inverse" for a dark header -->
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video count</th>
+      <th>Add too</th>
+      <th>Xoa</th>
+	</tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video Duration</th>
+      <th>Add Videos to the List</th>
+      <th>Xoa</th>
+    </tr>
+    <tr>
+      <th colspan="7" class="ts-pager">
+        <div class="form-inline">
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary first" title="first">⇤</button>
+            <button type="button" class="btn btn-secondary prev" title="previous">←</button>
+          </div>
+          <span class="pagedisplay"></span>
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary next" title="next">→</button>
+            <button type="button" class="btn btn-secondary last" title="last">⇥</button>
+          </div>
+          <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+          </select>
+          <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select page number"></select>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+	
+   <tr>
+      <td>976</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=976" title="my honor was my loyalty  (english subtitles)"><img width="100px" src="https://i.ytimg.com/vi/xww9C-CwZXE/mqdefault.jpg" alt="my honor was my loyalty  (english subtitles)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=976" title="my honor was my loyalty  (english subtitles)">my honor was my loyalty  (english subtitles)</a></td>
+      <td>01:55:24</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=976" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>977</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=977" title="The Cremator (Spalovač mrtvol) 1969 English Subtitles"><img width="100px" src="https://i.ytimg.com/vi/6NpgvCJ75Mg/mqdefault.jpg" alt="The Cremator (Spalovač mrtvol) 1969 English Subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=977" title="The Cremator (Spalovač mrtvol) 1969 English Subtitles">The Cremator (Spalovač mrtvol) 1969 English Subtitles</a></td>
+      <td>01:39:51</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=977" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>978</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=978" title="Ostre sledované vlaky  (Closely Watched Trains) 1966 Eng Subs"><img width="100px" src="https://i.ytimg.com/vi/mbp9EKLY4GA/mqdefault.jpg" alt="Ostre sledované vlaky  (Closely Watched Trains) 1966 Eng Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=978" title="Ostre sledované vlaky  (Closely Watched Trains) 1966 Eng Subs">Ostre sledované vlaky  (Closely Watched Trains) 1966 Eng Subs</a></td>
+      <td>01:32:48</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=978" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>979</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=979" title="Komedie om geld (1936), Director Max Ophüls (English and Spanish Subs)"><img width="100px" src="https://i.ytimg.com/vi/j3V4GLp4__g/mqdefault.jpg" alt="Komedie om geld (1936), Director Max Ophüls (English and Spanish Subs)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=979" title="Komedie om geld (1936), Director Max Ophüls (English and Spanish Subs)">Komedie om geld (1936), Director Max Ophüls (English and Spanish Subs)</a></td>
+      <td>02:14:22</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=979" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>980</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=980" title="Die verkaufte Braut (1932), Director: Max Ophüls (English Subtitle)"><img width="100px" src="https://i.ytimg.com/vi/OYJGozDNW9Y/mqdefault.jpg" alt="Die verkaufte Braut (1932), Director: Max Ophüls (English Subtitle)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=980" title="Die verkaufte Braut (1932), Director: Max Ophüls (English Subtitle)">Die verkaufte Braut (1932), Director: Max Ophüls (English Subtitle)</a></td>
+      <td>01:16:16</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=980" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>981</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=981" title="012  ベンヤメンタ学院"><img width="100px" src="https://i.ytimg.com/vi/jF9B9aWDhcc/mqdefault.jpg" alt="012  ベンヤメンタ学院"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=981" title="012  ベンヤメンタ学院">012  ベンヤメンタ学院</a></td>
+      <td>01:40:45</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=981" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>982</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=982" title="003  ピアノチューナー・オブ・アースクエイク"><img width="100px" src="https://i.ytimg.com/vi/PZartkfxnJs/mqdefault.jpg" alt="003  ピアノチューナー・オブ・アースクエイク"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=982" title="003  ピアノチューナー・オブ・アースクエイク">003  ピアノチューナー・オブ・アースクエイク</a></td>
+      <td>01:34:58</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=982" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>983</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=983" title="Briar-Rose or The Sleeping Beauty (1990) dir. Kihachiro Kawamoto"><img width="100px" src="https://i.ytimg.com/vi/g8kIkVM5Aic/mqdefault.jpg" alt="Briar-Rose or The Sleeping Beauty (1990) dir. Kihachiro Kawamoto"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=983" title="Briar-Rose or The Sleeping Beauty (1990) dir. Kihachiro Kawamoto">Briar-Rose or The Sleeping Beauty (1990) dir. Kihachiro Kawamoto</a></td>
+      <td>00:21:33</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=983" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>984</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=984" title="Das Gespenst - Herbert Achternbusch"><img width="100px" src="https://i.ytimg.com/vi/7WzhrUQyAN4/mqdefault.jpg" alt="Das Gespenst - Herbert Achternbusch"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=984" title="Das Gespenst - Herbert Achternbusch">Das Gespenst - Herbert Achternbusch</a></td>
+      <td>01:26:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=984" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>985</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=985" title="HILDE (2009) English Subtitle"><img width="100px" src="https://i.ytimg.com/vi/m5KshcSVFtA/mqdefault.jpg" alt="HILDE (2009) English Subtitle"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=985" title="HILDE (2009) English Subtitle">HILDE (2009) English Subtitle</a></td>
+      <td>02:11:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=985" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>986</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=986" title="Konec srpna v Hotelu Ozon (Jan Schmidt, 1967)"><img width="100px" src="https://i.ytimg.com/vi/dKJyAUfhRkc/mqdefault.jpg" alt="Konec srpna v Hotelu Ozon (Jan Schmidt, 1967)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=986" title="Konec srpna v Hotelu Ozon (Jan Schmidt, 1967)">Konec srpna v Hotelu Ozon (Jan Schmidt, 1967)</a></td>
+      <td>01:17:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=986" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>987</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=987" title="Eric The Golden Book Of Insects (2004) - Erik of het klein insectenboek"><img width="100px" src="https://i.ytimg.com/vi/uzkMyJSTing/mqdefault.jpg" alt="Eric The Golden Book Of Insects (2004) - Erik of het klein insectenboek"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=987" title="Eric The Golden Book Of Insects (2004) - Erik of het klein insectenboek">Eric The Golden Book Of Insects (2004) - Erik of het klein insectenboek</a></td>
+      <td>01:29:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=987" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>988</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=988" title="Schwarzfahrer - short film with English subtitles"><img width="100px" src="https://i.ytimg.com/vi/wiuv5hzj5i4/mqdefault.jpg" alt="Schwarzfahrer - short film with English subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=988" title="Schwarzfahrer - short film with English subtitles">Schwarzfahrer - short film with English subtitles</a></td>
+      <td>00:12:19</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=988" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>989</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=989" title="Knockin  on Heaven s Door I +7 SUBTITLE [Deutsch/German] [FULL HD]"><img width="100px" src="https://i.ytimg.com/vi/7f1zfMH8RX4/mqdefault.jpg" alt="Knockin  on Heaven s Door I +7 SUBTITLE [Deutsch/German] [FULL HD]"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=989" title="Knockin  on Heaven s Door I +7 SUBTITLE [Deutsch/German] [FULL HD]">Knockin  on Heaven s Door I +7 SUBTITLE [Deutsch/German] [FULL HD]</a></td>
+      <td>01:28:57</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=989" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>990</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=990" title="Fons Rademakers - Mijn Vriend"><img width="100px" src="https://i.ytimg.com/vi/4md8dbqEhUg/mqdefault.jpg" alt="Fons Rademakers - Mijn Vriend"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=990" title="Fons Rademakers - Mijn Vriend">Fons Rademakers - Mijn Vriend</a></td>
+      <td>02:02:44</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=990" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>991</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=991" title="Fons Rademakers - Als Twee Druppels Water"><img width="100px" src="https://i.ytimg.com/vi/zdRX1Xc7Dpk/mqdefault.jpg" alt="Fons Rademakers - Als Twee Druppels Water"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=991" title="Fons Rademakers - Als Twee Druppels Water">Fons Rademakers - Als Twee Druppels Water</a></td>
+      <td>01:53:05</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=991" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>992</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=992" title="Die Konkurrentin The Competitor"><img width="100px" src="https://i.ytimg.com/vi/pdlNhv6WGPM/mqdefault.jpg" alt="Die Konkurrentin The Competitor"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=992" title="Die Konkurrentin The Competitor">Die Konkurrentin The Competitor</a></td>
+      <td>01:27:28</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=992" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>993</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=993" title="DELIRIUM (2013) Full movie, English subtitles"><img width="100px" src="https://i.ytimg.com/vi/O8GECrIc6rw/mqdefault.jpg" alt="DELIRIUM (2013) Full movie, English subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=993" title="DELIRIUM (2013) Full movie, English subtitles">DELIRIUM (2013) Full movie, English subtitles</a></td>
+      <td>01:36:01</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=993" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>994</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=994" title="23 – Nichts ist so wie es scheint (1999) - with English subtitles"><img width="100px" src="https://i.ytimg.com/vi/EiN6q1E3Gxg/mqdefault.jpg" alt="23 – Nichts ist so wie es scheint (1999) - with English subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=994" title="23 – Nichts ist so wie es scheint (1999) - with English subtitles">23 – Nichts ist so wie es scheint (1999) - with English subtitles</a></td>
+      <td>01:34:48</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=994" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>995</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=995" title="Der letzte Akt (1955) - with accurate english subtitles (click on CC)"><img width="100px" src="https://i.ytimg.com/vi/7f0vuby6JxI/mqdefault.jpg" alt="Der letzte Akt (1955) - with accurate english subtitles (click on CC)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=995" title="Der letzte Akt (1955) - with accurate english subtitles (click on CC)">Der letzte Akt (1955) - with accurate english subtitles (click on CC)</a></td>
+      <td>01:46:59</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=995" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>996</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=996" title="INSTALATÉR Z TUCHLOVIC - THE GOOD PLUMBER - English Subtitles"><img width="100px" src="https://i.ytimg.com/vi/T8l1AOcatPE/mqdefault.jpg" alt="INSTALATÉR Z TUCHLOVIC - THE GOOD PLUMBER - English Subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=996" title="INSTALATÉR Z TUCHLOVIC - THE GOOD PLUMBER - English Subtitles">INSTALATÉR Z TUCHLOVIC - THE GOOD PLUMBER - English Subtitles</a></td>
+      <td>01:22:43</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=996" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>997</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=997" title="UFA Münchhausen 1943 Full Version - The Best Documentary Ever"><img width="100px" src="https://i.ytimg.com/vi/B6rKq4fNUDM/mqdefault.jpg" alt="UFA Münchhausen 1943 Full Version - The Best Documentary Ever"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=997" title="UFA Münchhausen 1943 Full Version - The Best Documentary Ever">UFA Münchhausen 1943 Full Version - The Best Documentary Ever</a></td>
+      <td>02:11:55</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=997" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>998</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=998" title="Wan Pipel (One People) 1976 - full Movie - English subtitles"><img width="100px" src="https://i.ytimg.com/vi/zkYwt7xY8YE/mqdefault.jpg" alt="Wan Pipel (One People) 1976 - full Movie - English subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=998" title="Wan Pipel (One People) 1976 - full Movie - English subtitles">Wan Pipel (One People) 1976 - full Movie - English subtitles</a></td>
+      <td>01:46:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=998" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>999</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=999" title="boy 7 dutch film chinese and english subtitles"><img width="100px" src="https://i.ytimg.com/vi/_oOROXX8N6g/mqdefault.jpg" alt="boy 7 dutch film chinese and english subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=999" title="boy 7 dutch film chinese and english subtitles">boy 7 dutch film chinese and english subtitles</a></td>
+      <td>01:31:37</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=999" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1000</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1000" title="For a Lost Soldier (1992) English Subtitles (Dutch title: Voor een Verloren Soldaat)"><img width="100px" src="https://i.ytimg.com/vi/Y4m_cQfh0CA/mqdefault.jpg" alt="For a Lost Soldier (1992) English Subtitles (Dutch title: Voor een Verloren Soldaat)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1000" title="For a Lost Soldier (1992) English Subtitles (Dutch title: Voor een Verloren Soldaat)">For a Lost Soldier (1992) English Subtitles (Dutch title: Voor een Verloren Soldaat)</a></td>
+      <td>01:29:36</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1000" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1001</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1001" title="STELLET LICHT / LUZ SILENCIOSA / SILENT LIGHT (2007) (full film)"><img width="100px" src="https://i.ytimg.com/vi/fzdUS7FFHh8/mqdefault.jpg" alt="STELLET LICHT / LUZ SILENCIOSA / SILENT LIGHT (2007) (full film)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1001" title="STELLET LICHT / LUZ SILENCIOSA / SILENT LIGHT (2007) (full film)">STELLET LICHT / LUZ SILENCIOSA / SILENT LIGHT (2007) (full film)</a></td>
+      <td>02:10:40</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1001" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1002</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1002" title="The Loves of a Blonde / Los Amores de una Rubia (1965) [Milos Forman] Eng. & Esp. Subs."><img width="100px" src="https://i.ytimg.com/vi/gxvt6n-U-oM/mqdefault.jpg" alt="The Loves of a Blonde / Los Amores de una Rubia (1965) [Milos Forman] Eng. & Esp. Subs."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1002" title="The Loves of a Blonde / Los Amores de una Rubia (1965) [Milos Forman] Eng. & Esp. Subs.">The Loves of a Blonde / Los Amores de una Rubia (1965) [Milos Forman] Eng. & Esp. Subs.</a></td>
+      <td>01:25:06</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1002" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1003</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1003" title="1000 Tage (1000 days) - German film with English subtitles"><img width="100px" src="https://i.ytimg.com/vi/z3ZptqB_w7g/mqdefault.jpg" alt="1000 Tage (1000 days) - German film with English subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1003" title="1000 Tage (1000 days) - German film with English subtitles">1000 Tage (1000 days) - German film with English subtitles</a></td>
+      <td>00:43:05</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1003" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1004</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1004" title="Konrad oder Das Kind aus der Konservenbüchse - Konrad or the Child out of the Tin (1983)"><img width="100px" src="https://i.ytimg.com/vi/62Pd7AHLuZU/mqdefault.jpg" alt="Konrad oder Das Kind aus der Konservenbüchse - Konrad or the Child out of the Tin (1983)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1004" title="Konrad oder Das Kind aus der Konservenbüchse - Konrad or the Child out of the Tin (1983)">Konrad oder Das Kind aus der Konservenbüchse - Konrad or the Child out of the Tin (1983)</a></td>
+      <td>01:16:52</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1004" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1005</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1005" title="Wer Früher StirbtIst Länger Tod (2006). Grave Decisions-The sooner you die the longer you are dead"><img width="100px" src="https://i.ytimg.com/vi/8KuS4Z0m6u8/mqdefault.jpg" alt="Wer Früher StirbtIst Länger Tod (2006). Grave Decisions-The sooner you die the longer you are dead"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1005" title="Wer Früher StirbtIst Länger Tod (2006). Grave Decisions-The sooner you die the longer you are dead">Wer Früher StirbtIst Länger Tod (2006). Grave Decisions-The sooner you die the longer you are dead</a></td>
+      <td>01:41:57</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1005" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1006</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1006" title="ADMIRAL - Newest ADVENTURE Movies - Best ACTION Adventure Movies Full Length - Subtitles"><img width="100px" src="https://i.ytimg.com/vi/rNFb0gwZ_fI/mqdefault.jpg" alt="ADMIRAL - Newest ADVENTURE Movies - Best ACTION Adventure Movies Full Length - Subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1006" title="ADMIRAL - Newest ADVENTURE Movies - Best ACTION Adventure Movies Full Length - Subtitles">ADMIRAL - Newest ADVENTURE Movies - Best ACTION Adventure Movies Full Length - Subtitles</a></td>
+      <td>02:21:37</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1006" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1007</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1007" title="Pouta"><img width="100px" src="https://i.ytimg.com/vi/GUOeHmvooUM/mqdefault.jpg" alt="Pouta"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1007" title="Pouta">Pouta</a></td>
+      <td>02:25:46</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1007" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1008</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1008" title="ANTIBODIES"><img width="100px" src="https://i.ytimg.com/vi/Fd48TPGc9JQ/mqdefault.jpg" alt="ANTIBODIES"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1008" title="ANTIBODIES">ANTIBODIES</a></td>
+      <td>02:07:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1008" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1009</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1009" title="Madchen In Uniform (Girls In Uniform - 1958) [Full English Sub]"><img width="100px" src="https://i.ytimg.com/vi/MbN6O14U6og/mqdefault.jpg" alt="Madchen In Uniform (Girls In Uniform - 1958) [Full English Sub]"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1009" title="Madchen In Uniform (Girls In Uniform - 1958) [Full English Sub]">Madchen In Uniform (Girls In Uniform - 1958) [Full English Sub]</a></td>
+      <td>01:30:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1009" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1010</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1010" title="Der Samurai - Full Length Movie"><img width="100px" src="https://i.ytimg.com/vi/ga4Ofw4-i6c/mqdefault.jpg" alt="Der Samurai - Full Length Movie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1010" title="Der Samurai - Full Length Movie">Der Samurai - Full Length Movie</a></td>
+      <td>01:18:56</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1010" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1011</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1011" title="Was Frauen träumen (1933)"><img width="100px" src="https://i.ytimg.com/vi/tyO7O1zRRRI/mqdefault.jpg" alt="Was Frauen träumen (1933)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1011" title="Was Frauen träumen (1933)">Was Frauen träumen (1933)</a></td>
+      <td>01:25:55</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1011" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1012</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1012" title="I Dont Just Want You To Love Me - R.W. Fassbinder"><img width="100px" src="https://i.ytimg.com/vi/gBlm8ys1Pj4/mqdefault.jpg" alt="I Dont Just Want You To Love Me - R.W. Fassbinder"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1012" title="I Dont Just Want You To Love Me - R.W. Fassbinder">I Dont Just Want You To Love Me - R.W. Fassbinder</a></td>
+      <td>01:36:39</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1012" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1013</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1013" title="Voyager - 1991 - (Volker Schlöndorff)"><img width="100px" src="https://i.ytimg.com/vi/mTFSb0Ygfco/mqdefault.jpg" alt="Voyager - 1991 - (Volker Schlöndorff)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1013" title="Voyager - 1991 - (Volker Schlöndorff)">Voyager - 1991 - (Volker Schlöndorff)</a></td>
+      <td>01:53:31</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1013" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1014</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1014" title="Angst essen Seele auf (1974) Korku Ruhu Kemirir - Türkçe Altyazılı and English Subtitles"><img width="100px" src="https://i.ytimg.com/vi/bchs2iBpIak/mqdefault.jpg" alt="Angst essen Seele auf (1974) Korku Ruhu Kemirir - Türkçe Altyazılı and English Subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1014" title="Angst essen Seele auf (1974) Korku Ruhu Kemirir - Türkçe Altyazılı and English Subtitles">Angst essen Seele auf (1974) Korku Ruhu Kemirir - Türkçe Altyazılı and English Subtitles</a></td>
+      <td>01:33:23</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1014" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1015</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1015" title="23 - Karl Koch."><img width="100px" src="https://i.ytimg.com/vi/Tv12fxZxYTo/mqdefault.jpg" alt="23 - Karl Koch."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1015" title="23 - Karl Koch.">23 - Karl Koch.</a></td>
+      <td>01:34:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1015" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1016</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1016" title="The Last Train to Auschwitz"><img width="100px" src="https://i.ytimg.com/vi/VgnqgF3XGUk/mqdefault.jpg" alt="The Last Train to Auschwitz"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1016" title="The Last Train to Auschwitz">The Last Train to Auschwitz</a></td>
+      <td>01:54:31</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1016" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1017</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1017" title="Immensee (1943) With English Subs"><img width="100px" src="https://i.ytimg.com/vi/_NcHsy6jSyQ/mqdefault.jpg" alt="Immensee (1943) With English Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1017" title="Immensee (1943) With English Subs">Immensee (1943) With English Subs</a></td>
+      <td>01:27:45</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1017" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1018</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1018" title="Opfergang (1944) Full Movie with English Subs"><img width="100px" src="https://i.ytimg.com/vi/Ni1zIds7deY/mqdefault.jpg" alt="Opfergang (1944) Full Movie with English Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1018" title="Opfergang (1944) Full Movie with English Subs">Opfergang (1944) Full Movie with English Subs</a></td>
+      <td>01:28:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1018" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1019</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1019" title="Die gläserne Zelle | The Glass Cell (1978) - eng subs"><img width="100px" src="https://i.ytimg.com/vi/UdaG0aI0tic/mqdefault.jpg" alt="Die gläserne Zelle | The Glass Cell (1978) - eng subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1019" title="Die gläserne Zelle | The Glass Cell (1978) - eng subs">Die gläserne Zelle | The Glass Cell (1978) - eng subs</a></td>
+      <td>01:29:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1019" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1020</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1020" title="Ich und die Kaiserin   (The Empress and I)"><img width="100px" src="https://i.ytimg.com/vi/3oWMEMHa69Y/mqdefault.jpg" alt="Ich und die Kaiserin   (The Empress and I)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1020" title="Ich und die Kaiserin   (The Empress and I)">Ich und die Kaiserin   (The Empress and I)</a></td>
+      <td>01:21:52</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1020" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1021</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1021" title="Happy End"><img width="100px" src="https://i.ytimg.com/vi/KLxXiP2RKTA/mqdefault.jpg" alt="Happy End"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1021" title="Happy End">Happy End</a></td>
+      <td>01:09:26</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1021" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1022</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1022" title="Der schwarze Husar  (The Black Hussar)  1932"><img width="100px" src="https://i.ytimg.com/vi/xjbFYhfhEBs/mqdefault.jpg" alt="Der schwarze Husar  (The Black Hussar)  1932"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1022" title="Der schwarze Husar  (The Black Hussar)  1932">Der schwarze Husar  (The Black Hussar)  1932</a></td>
+      <td>01:30:15</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1022" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1023</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1023" title="Händler der vier Jahreszeiten (1972) Dört Mevsim Satıcısı Türkçe Altyazılı and English Subtitles"><img width="100px" src="https://i.ytimg.com/vi/Z99Vx8UXHx0/mqdefault.jpg" alt="Händler der vier Jahreszeiten (1972) Dört Mevsim Satıcısı Türkçe Altyazılı and English Subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1023" title="Händler der vier Jahreszeiten (1972) Dört Mevsim Satıcısı Türkçe Altyazılı and English Subtitles">Händler der vier Jahreszeiten (1972) Dört Mevsim Satıcısı Türkçe Altyazılı and English Subtitles</a></td>
+      <td>01:24:35</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1023" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1024</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1024" title="Ergens in Nederland [aka Somewhere in the Netherlands] (1940)"><img width="100px" src="https://i.ytimg.com/vi/8z-6-abBqVs/mqdefault.jpg" alt="Ergens in Nederland [aka Somewhere in the Netherlands] (1940)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1024" title="Ergens in Nederland [aka Somewhere in the Netherlands] (1940)">Ergens in Nederland [aka Somewhere in the Netherlands] (1940)</a></td>
+      <td>01:23:18</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1024" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>1025</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1025" title="(En Kort En Lang) Shake It All About - Eng Subs"><img width="100px" src="https://i.ytimg.com/vi/NU4EanO7Qo4/mqdefault.jpg" alt="(En Kort En Lang) Shake It All About - Eng Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1025" title="(En Kort En Lang) Shake It All About - Eng Subs">(En Kort En Lang) Shake It All About - Eng Subs</a></td>
+      <td>01:36:55</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PL2I1Gl32x39y8009FdLMmJ185NT12IWCr" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1025" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   </tbody>
+
+</table>
+</div>
+</body></html>

@@ -1,0 +1,208 @@
+  <html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.w3schools.com/tags/demo_icon.gif" type="image/gif" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="views/videoDetail/mystyle.css">
+  <!-- Bootstrap v4.x stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<!-- bootstrap css theme -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/docs/css/bootstrap-v4.min.css">
+
+	<script src="https://mottie.github.io/tablesorter/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+	<!-- pager plugin -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+	<script src="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+	<style>
+	.tablesorter-pager .btn-group-sm .btn {
+	  font-size: 1.2em; /* make pager arrows more visible */
+	}
+	</style>
+  <script>
+  $(function() {
+
+  $("table").tablesorter({
+    theme : "bootstrap",
+
+    widthFixed: true,
+
+    // widget code contained in the jquery.tablesorter.widgets.js file
+    // use the zebra stripe widget if you plan on hiding any rows (filter widget)
+    // the uitheme widget is NOT REQUIRED!
+    widgets : [ "filter", "columns", "zebra" ],
+
+    widgetOptions : {
+      // using the default zebra striping class name, so it actually isn't included in the theme variable above
+      // this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+      zebra : ["even", "odd"],
+
+      // class names added to columns when sorted
+      columns: [ "primary", "secondary", "tertiary" ],
+
+      // reset filters button
+      filter_reset : ".reset",
+
+      // extra css class name (string or array) added to the filter element (input or select)
+      filter_cssFilter: [
+        'form-control',
+        'form-control',
+        'form-control custom-select', // select needs custom class names :(
+        'form-control',
+        'form-control',
+        'form-control',
+        'form-control'
+      ]
+
+    }
+  })
+  .tablesorterPager({
+
+    // target the pager markup - see the HTML block below
+    container: $(".ts-pager"),
+
+    // target the pager page select dropdown - choose a page
+    cssGoto  : ".pagenum",
+
+    // remove rows from the table to speed up the sort of large tables.
+    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+    removeRows: false,
+
+    // output string - default is '{page}/{totalPages}';
+    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+
+  });
+
+});
+  </script>  <title>Category Video Manage</title>
+
+</head>
+<body>
+
+<div class="contentItem">
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="/admin/">Home page</a></button>
+	  <div class="dropdown-content">
+		<a href="?c=listDetail&a=getAllWithView&k=1">get All ListDetail</a>
+		<a title="Them list videos moi" target="_blank" href="youtube/">Add New</a>
+		<a title="Xoa trung lap video + listDetail" target="_blank" href="removeDuplicate.php">Remove Duplicate</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Them list videos moi" target="_blank" href="youtube/">Add New By Youtube</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Tao Cache cho Videos + remove cac videos va list bi trung lap" target="_blank" href="/cache/">Gen cache</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">get All VideosDetail</button>
+	  <div class="dropdown-content">
+		<a href="?c=videoDetail&a=getAllWithView&k=0">get All VideosDetail(>10s)</a>
+		<a href="#">Add New</a>
+		<a href="#">Remove</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo CategoryID</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 Bekeken (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 Nieuwe video (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 Beginners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 Audition (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 Grammatica (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 Woordenschat
+
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 Lezing
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 Schrift (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 Uitspraak (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 Sprekend (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 Tentamen (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 Zang (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 Russische film (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 Video's voor kinderen (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 studeren in holland (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 leven in Nederland (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 Kopen (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 Voedsel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 Gesprek (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 Reizen (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 Cursus (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 Verhaal (6)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List tang dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (7)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List giam dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a>	  </div>
+	</div>
+	<br/>
+	<br/>
+	<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos L(0) - v:(0)</a> |<a title='Số Lists của category này(3) - Số Videos của category này:(21)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking L(3) - v:(21)</a> |<a title='Số Lists của category này(3) - Số Videos của category này:(102)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film L(3) - v:(102)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(150)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners L(4) - v:(150)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(133)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar L(4) - v:(133)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(89)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing L(4) - v:(89)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(94)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids L(4) - v:(94)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(40)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study L(4) - v:(40)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(138)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch L(4) - v:(138)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(45)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping L(4) - v:(45)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(129)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary L(5) - v:(129)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(109)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading L(5) - v:(109)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(41)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation L(5) - v:(41)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(114)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams L(5) - v:(114)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(196)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs L(5) - v:(196)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(113)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food L(5) - v:(113)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(175)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation L(5) - v:(175)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(62)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel L(5) - v:(62)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(200)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course L(5) - v:(200)</a> |<a title='Số Lists của category này(6) - Số Videos của category này:(64)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story L(6) - v:(64)</a> |<a title='Số Lists của category này(7) - Số Videos của category này:(209)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening L(7) - v:(209)</a> |<br/>Số lượng Videos trong DB: 2224 Videos<br/>Số lượng List trong DB: 92 Listt</div>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kw" value="" placeholder="search here">
+	<input type="submit" name="submit" value="search name videos">
+</form>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kwl" value="" placeholder="search name List here">
+	<input type="submit" name="submit" value="search name List videos">
+</form><br/>
+<h1>Category Video Manage</h1>
+
+
+<table class="table table-bordered table-striped">
+  <thead> <!-- add class="thead-inverse" for a dark header -->
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>CategoryID</th>
+      <th>ListVideo count</th>
+      <th>Add More List to this Category</th>
+      <th>Xoa</th>
+	</tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+	  <th>CategoryID</th>
+      <th>ListVideo count</th>
+      <th>Add More List to this Category</th>
+      <th>Xoa</th>
+    </tr>
+    <tr>
+      <th colspan="7" class="ts-pager">
+        <div class="form-inline">
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary first" title="first">⇤</button>
+            <button type="button" class="btn btn-secondary prev" title="previous">←</button>
+          </div>
+          <span class="pagedisplay"></span>
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary next" title="next">→</button>
+            <button type="button" class="btn btn-secondary last" title="last">⇥</button>
+          </div>
+          <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+          </select>
+          <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select page number"></select>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+        <tr>
+          <td>1</td>
+          <td><a target="_blank" href="youtube/?CategoryID=2" title="Click to insert listDetail into this Category"><img width="100px" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c545.png" alt="insert Listdetail in to this category"></a></td>
+          <td><b>List :</b>insert listdetail in to category</td>
+          <td><a target="_blank" href="youtube/?CategoryID=2" title="Click to insert listDetail into this Category">insert listdetail in to category</a></td>
+    	  <td>0</td>
+          <td><a target="_blank" href="youtube/?CategoryID=2" title="Click to insert listDetail into this Category">Add more ListVideo</a></td>
+          <td>non deleteable</td>
+       </tr>
+       
+        </tbody>
+
+</table>
+</div>
+</body></html>

@@ -1,0 +1,596 @@
+  <html>
+<head>
+      <title>Videos by List PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT</title>
+
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.w3schools.com/tags/demo_icon.gif" type="image/gif" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="views/videoDetail/mystyle.css">
+  <!-- Bootstrap v4.x stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<!-- bootstrap css theme -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/docs/css/bootstrap-v4.min.css">
+
+	<script src="https://mottie.github.io/tablesorter/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+	<!-- pager plugin -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+	<script src="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+	<style>
+	.tablesorter-pager .btn-group-sm .btn {
+	  font-size: 1.2em; /* make pager arrows more visible */
+	}
+	</style>
+  <script>
+  $(function() {
+
+  $("table").tablesorter({
+    theme : "bootstrap",
+
+    widthFixed: true,
+
+    // widget code contained in the jquery.tablesorter.widgets.js file
+    // use the zebra stripe widget if you plan on hiding any rows (filter widget)
+    // the uitheme widget is NOT REQUIRED!
+    widgets : [ "filter", "columns", "zebra" ],
+
+    widgetOptions : {
+      // using the default zebra striping class name, so it actually isn't included in the theme variable above
+      // this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+      zebra : ["even", "odd"],
+
+      // class names added to columns when sorted
+      columns: [ "primary", "secondary", "tertiary" ],
+
+      // reset filters button
+      filter_reset : ".reset",
+
+      // extra css class name (string or array) added to the filter element (input or select)
+      filter_cssFilter: [
+        'form-control',
+        'form-control',
+        'form-control custom-select', // select needs custom class names :(
+        'form-control',
+        'form-control',
+        'form-control',
+        'form-control'
+      ]
+
+    }
+  })
+  .tablesorterPager({
+
+    // target the pager markup - see the HTML block below
+    container: $(".ts-pager"),
+
+    // target the pager page select dropdown - choose a page
+    cssGoto  : ".pagenum",
+
+    // remove rows from the table to speed up the sort of large tables.
+    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+    removeRows: false,
+
+    // output string - default is '{page}/{totalPages}';
+    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+
+  });
+
+});
+  </script></head>
+<body>
+
+<div class="contentItem">
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="/admin/">Home page</a></button>
+	  <div class="dropdown-content">
+		<a href="?c=listDetail&a=getAllWithView&k=1">get All ListDetail</a>
+		<a title="Them list videos moi" target="_blank" href="youtube/">Add New</a>
+		<a title="Xoa trung lap video + listDetail" target="_blank" href="removeDuplicate.php">Remove Duplicate</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Them list videos moi" target="_blank" href="youtube/">Add New By Youtube</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Tao Cache cho Videos + remove cac videos va list bi trung lap" target="_blank" href="/cache/">Gen cache</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">get All VideosDetail</button>
+	  <div class="dropdown-content">
+		<a href="?c=videoDetail&a=getAllWithView&k=0">get All VideosDetail(>10s)</a>
+		<a href="#">Add New</a>
+		<a href="#">Remove</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo CategoryID</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 Bekeken (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 Nieuwe video (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 Beginners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 Audition (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 Grammatica (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 Woordenschat
+
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 Lezing
+ (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 Schrift (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 Uitspraak (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 Sprekend (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 Tentamen (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 Zang (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 Dutch film (8)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 Video's voor kinderen (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 studeren in holland (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 leven in Nederland (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 Kopen (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 Voedsel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 Gesprek (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 Reizen (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 Cursus (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 Verhaal (6)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List tang dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (8)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List giam dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (8)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (7)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (6)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (5)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (4)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (3)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a>	  </div>
+	</div>
+	<br/>
+	<br/>
+	<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos L(0) - v:(0)</a> |<a title='Số Lists của category này(3) - Số Videos của category này:(21)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking L(3) - v:(21)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(150)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners L(4) - v:(150)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(133)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar L(4) - v:(133)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(89)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing L(4) - v:(89)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(94)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids L(4) - v:(94)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(40)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study L(4) - v:(40)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(138)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 dutch L(4) - v:(138)</a> |<a title='Số Lists của category này(4) - Số Videos của category này:(45)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping L(4) - v:(45)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(129)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary L(5) - v:(129)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(109)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading L(5) - v:(109)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(41)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation L(5) - v:(41)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(114)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams L(5) - v:(114)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(196)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs L(5) - v:(196)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(113)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food L(5) - v:(113)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(175)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation L(5) - v:(175)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(62)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel L(5) - v:(62)</a> |<a title='Số Lists của category này(5) - Số Videos của category này:(200)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course L(5) - v:(200)</a> |<a title='Số Lists của category này(6) - Số Videos của category này:(64)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story L(6) - v:(64)</a> |<a title='Số Lists của category này(7) - Số Videos của category này:(209)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening L(7) - v:(209)</a> |<a title='Số Lists của category này(8) - Số Videos của category này:(244)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film L(8) - v:(244)</a> |<br/>Số lượng Videos trong DB: 2366 Videos<br/>Số lượng List trong DB: 97 Listt</div>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kw" value="" placeholder="search here">
+	<input type="submit" name="submit" value="search name videos">
+</form>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kwl" value="" placeholder="search name List here">
+	<input type="submit" name="submit" value="search name List videos">
+</form><br/>
+<h1>Tat ca video co trong co so du lieu</h1>
+
+
+<table class="table table-bordered table-striped">
+  <thead> <!-- add class="thead-inverse" for a dark header -->
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video count</th>
+      <th>Add too</th>
+      <th>Xoa</th>
+	</tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video Duration</th>
+      <th>Add Videos to the List</th>
+      <th>Xoa</th>
+    </tr>
+    <tr>
+      <th colspan="7" class="ts-pager">
+        <div class="form-inline">
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary first" title="first">⇤</button>
+            <button type="button" class="btn btn-secondary prev" title="previous">←</button>
+          </div>
+          <span class="pagedisplay"></span>
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary next" title="next">→</button>
+            <button type="button" class="btn btn-secondary last" title="last">⇥</button>
+          </div>
+          <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+          </select>
+          <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select page number"></select>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+	
+   <tr>
+      <td>2302</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2302" title="Born of Hope - Full Movie"><img width="100px" src="https://i.ytimg.com/vi/qINwCRM8acM/mqdefault.jpg" alt="Born of Hope - Full Movie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2302" title="Born of Hope - Full Movie">Born of Hope - Full Movie</a></td>
+      <td>01:11:25</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2302" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2303</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2303" title="Les Misérables (2000) part 1/2 (dutch subs)"><img width="100px" src="https://i.ytimg.com/vi/8c7Fux0Vz2k/mqdefault.jpg" alt="Les Misérables (2000) part 1/2 (dutch subs)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2303" title="Les Misérables (2000) part 1/2 (dutch subs)">Les Misérables (2000) part 1/2 (dutch subs)</a></td>
+      <td>02:56:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2303" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2304</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2304" title="Les Misérables (2000) part 2/2 (dutch subs)"><img width="100px" src="https://i.ytimg.com/vi/WgAFcIqKD2Q/mqdefault.jpg" alt="Les Misérables (2000) part 2/2 (dutch subs)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2304" title="Les Misérables (2000) part 2/2 (dutch subs)">Les Misérables (2000) part 2/2 (dutch subs)</a></td>
+      <td>02:54:40</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2304" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2305</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2305" title="Brotherhood - Full Movie"><img width="100px" src="https://i.ytimg.com/vi/EcHc4lNEdHU/mqdefault.jpg" alt="Brotherhood - Full Movie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2305" title="Brotherhood - Full Movie">Brotherhood - Full Movie</a></td>
+      <td>01:36:55</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2305" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2306</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2306" title="Escape from Sobibor (Nederlands ondertiteld)"><img width="100px" src="https://i.ytimg.com/vi/fap7rvcESYA/mqdefault.jpg" alt="Escape from Sobibor (Nederlands ondertiteld)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2306" title="Escape from Sobibor (Nederlands ondertiteld)">Escape from Sobibor (Nederlands ondertiteld)</a></td>
+      <td>02:22:37</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2306" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2307</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2307" title="Blood and Bone (2009) NL Subs"><img width="100px" src="https://i.ytimg.com/vi/Fvjb2YBQGyU/mqdefault.jpg" alt="Blood and Bone (2009) NL Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2307" title="Blood and Bone (2009) NL Subs">Blood and Bone (2009) NL Subs</a></td>
+      <td>01:33:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2307" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2308</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2308" title="Battletruck (complete w/ Dutch subtitles)"><img width="100px" src="https://i.ytimg.com/vi/24alaWjfmws/mqdefault.jpg" alt="Battletruck (complete w/ Dutch subtitles)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2308" title="Battletruck (complete w/ Dutch subtitles)">Battletruck (complete w/ Dutch subtitles)</a></td>
+      <td>01:29:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2308" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2309</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2309" title="Der Untergang Dutch Subtitles"><img width="100px" src="https://i.ytimg.com/vi/TqLNTNVILL4/mqdefault.jpg" alt="Der Untergang Dutch Subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2309" title="Der Untergang Dutch Subtitles">Der Untergang Dutch Subtitles</a></td>
+      <td>02:35:12</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2309" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2310</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2310" title="END OF THE SPEAR NEDERLANDS ONDERTITELD HQ"><img width="100px" src="https://i.ytimg.com/vi/J9qQjN1mZBo/mqdefault.jpg" alt="END OF THE SPEAR NEDERLANDS ONDERTITELD HQ"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2310" title="END OF THE SPEAR NEDERLANDS ONDERTITELD HQ">END OF THE SPEAR NEDERLANDS ONDERTITELD HQ</a></td>
+      <td>01:46:50</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2310" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2311</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2311" title="Scary Movie 4 NL subbed   YouTubevia torchbrowser com"><img width="100px" src="https://i.ytimg.com/vi/IruH_RCjqSQ/mqdefault.jpg" alt="Scary Movie 4 NL subbed   YouTubevia torchbrowser com"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2311" title="Scary Movie 4 NL subbed   YouTubevia torchbrowser com">Scary Movie 4 NL subbed   YouTubevia torchbrowser com</a></td>
+      <td>01:29:36</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2311" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2312</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2312" title="Horror Movie 2014  Blood Snow  Full     English  NL+ sub"><img width="100px" src="https://i.ytimg.com/vi/NPQeEgHXvDA/mqdefault.jpg" alt="Horror Movie 2014  Blood Snow  Full     English  NL+ sub"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2312" title="Horror Movie 2014  Blood Snow  Full     English  NL+ sub">Horror Movie 2014  Blood Snow  Full     English  NL+ sub</a></td>
+      <td>01:13:59</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2312" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2313</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2313" title="Janes Paradise VOLLEDIGE FILM (Ned. ondertiteld)"><img width="100px" src="https://i.ytimg.com/vi/hllCC5wKT4g/mqdefault.jpg" alt="Janes Paradise VOLLEDIGE FILM (Ned. ondertiteld)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2313" title="Janes Paradise VOLLEDIGE FILM (Ned. ondertiteld)">Janes Paradise VOLLEDIGE FILM (Ned. ondertiteld)</a></td>
+      <td>01:20:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2313" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2314</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2314" title="16 Wishes 2010,  NL Subs"><img width="100px" src="https://i.ytimg.com/vi/g2kVRLPTub4/mqdefault.jpg" alt="16 Wishes 2010,  NL Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2314" title="16 Wishes 2010,  NL Subs">16 Wishes 2010,  NL Subs</a></td>
+      <td>01:30:08</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2314" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2315</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2315" title="Scary Movie 1 - Behind the couch ( Dutch subtitles )"><img width="100px" src="https://i.ytimg.com/vi/NNmffNcrzJI/mqdefault.jpg" alt="Scary Movie 1 - Behind the couch ( Dutch subtitles )"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2315" title="Scary Movie 1 - Behind the couch ( Dutch subtitles )">Scary Movie 1 - Behind the couch ( Dutch subtitles )</a></td>
+      <td>00:02:11</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2315" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2316</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2316" title="Elvis Presley - Love Me Tender 1956 Full movie NL Subs"><img width="100px" src="https://i.ytimg.com/vi/ukcpRSPcJco/mqdefault.jpg" alt="Elvis Presley - Love Me Tender 1956 Full movie NL Subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2316" title="Elvis Presley - Love Me Tender 1956 Full movie NL Subs">Elvis Presley - Love Me Tender 1956 Full movie NL Subs</a></td>
+      <td>01:24:30</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2316" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2317</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2317" title="The Life of Jesus • English • Dutch Subtitles • Official Full HD Movie"><img width="100px" src="https://i.ytimg.com/vi/9AraHcNceTo/mqdefault.jpg" alt="The Life of Jesus • English • Dutch Subtitles • Official Full HD Movie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2317" title="The Life of Jesus • English • Dutch Subtitles • Official Full HD Movie">The Life of Jesus • English • Dutch Subtitles • Official Full HD Movie</a></td>
+      <td>03:02:50</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2317" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2318</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2318" title="The Grudge 2: FULL MOVIE: NL SUBS"><img width="100px" src="https://i.ytimg.com/vi/_7YGxz03GIE/mqdefault.jpg" alt="The Grudge 2: FULL MOVIE: NL SUBS"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2318" title="The Grudge 2: FULL MOVIE: NL SUBS">The Grudge 2: FULL MOVIE: NL SUBS</a></td>
+      <td>01:42:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2318" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2319</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2319" title="The Slender Man - Volledige Film (Full Movie) - 2013 (Met Nederlandse ondertiteling)"><img width="100px" src="https://i.ytimg.com/vi/ouFG9j2RvmY/mqdefault.jpg" alt="The Slender Man - Volledige Film (Full Movie) - 2013 (Met Nederlandse ondertiteling)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2319" title="The Slender Man - Volledige Film (Full Movie) - 2013 (Met Nederlandse ondertiteling)">The Slender Man - Volledige Film (Full Movie) - 2013 (Met Nederlandse ondertiteling)</a></td>
+      <td>01:18:03</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2319" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2320</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2320" title="The Gods Must Be Crazy Part 2 Film Uit 1981 Eng + Ned Text"><img width="100px" src="https://i.ytimg.com/vi/05xg-74RlG0/mqdefault.jpg" alt="The Gods Must Be Crazy Part 2 Film Uit 1981 Eng + Ned Text"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2320" title="The Gods Must Be Crazy Part 2 Film Uit 1981 Eng + Ned Text">The Gods Must Be Crazy Part 2 Film Uit 1981 Eng + Ned Text</a></td>
+      <td>01:32:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2320" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2321</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2321" title="Ciske de Rat hele film!"><img width="100px" src="https://i.ytimg.com/vi/U1h6ACxWkhQ/mqdefault.jpg" alt="Ciske de Rat hele film!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2321" title="Ciske de Rat hele film!">Ciske de Rat hele film!</a></td>
+      <td>01:45:55</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2321" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2322</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2322" title="Het Gezin Van Paemel"><img width="100px" src="https://i.ytimg.com/vi/T9Hwod9V9KM/mqdefault.jpg" alt="Het Gezin Van Paemel"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2322" title="Het Gezin Van Paemel">Het Gezin Van Paemel</a></td>
+      <td>01:40:33</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2322" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2323</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2323" title="Oesje!"><img width="100px" src="https://i.ytimg.com/vi/1PRmVzirXVQ/mqdefault.jpg" alt="Oesje!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2323" title="Oesje!">Oesje!</a></td>
+      <td>01:29:04</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2323" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2324</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2324" title="Schellebelle 1919 full movie"><img width="100px" src="https://i.ytimg.com/vi/YjwdGOKsCEU/mqdefault.jpg" alt="Schellebelle 1919 full movie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2324" title="Schellebelle 1919 full movie">Schellebelle 1919 full movie</a></td>
+      <td>01:40:23</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2324" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2325</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2325" title="Ciske de rat 1955 hele film"><img width="100px" src="https://i.ytimg.com/vi/oZLLLltfMkQ/mqdefault.jpg" alt="Ciske de rat 1955 hele film"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2325" title="Ciske de rat 1955 hele film">Ciske de rat 1955 hele film</a></td>
+      <td>01:31:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2325" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2326</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2326" title="Herinneringen van de toekomst - NL sub - compleet"><img width="100px" src="https://i.ytimg.com/vi/PeQzUb04OD0/mqdefault.jpg" alt="Herinneringen van de toekomst - NL sub - compleet"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2326" title="Herinneringen van de toekomst - NL sub - compleet">Herinneringen van de toekomst - NL sub - compleet</a></td>
+      <td>01:37:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2326" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2327</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2327" title="Het eiland-Ostrov 2006 (Nederlandse Ondertitels)."><img width="100px" src="https://i.ytimg.com/vi/7TlQ6C55VWU/mqdefault.jpg" alt="Het eiland-Ostrov 2006 (Nederlandse Ondertitels)."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2327" title="Het eiland-Ostrov 2006 (Nederlandse Ondertitels).">Het eiland-Ostrov 2006 (Nederlandse Ondertitels).</a></td>
+      <td>01:49:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2327" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2328</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2328" title="Escape from Sobibor (Nederlands ondertiteld)"><img width="100px" src="https://i.ytimg.com/vi/fap7rvcESYA/mqdefault.jpg" alt="Escape from Sobibor (Nederlands ondertiteld)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2328" title="Escape from Sobibor (Nederlands ondertiteld)">Escape from Sobibor (Nederlands ondertiteld)</a></td>
+      <td>02:22:37</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2328" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2329</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2329" title="The Grudge 2: FULL MOVIE: NL SUBS"><img width="100px" src="https://i.ytimg.com/vi/_7YGxz03GIE/mqdefault.jpg" alt="The Grudge 2: FULL MOVIE: NL SUBS"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2329" title="The Grudge 2: FULL MOVIE: NL SUBS">The Grudge 2: FULL MOVIE: NL SUBS</a></td>
+      <td>01:42:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2329" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2330</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2330" title="Film: de Punt (2009)"><img width="100px" src="https://i.ytimg.com/vi/tTZ7i53P6f4/mqdefault.jpg" alt="Film: de Punt (2009)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2330" title="Film: de Punt (2009)">Film: de Punt (2009)</a></td>
+      <td>01:21:53</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2330" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2331</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2331" title="Actie Films Nieuwe films 2014 Sniper Legacy   Best Fight, Actie, Oorlog, Hollywood Movie HD"><img width="100px" src="https://i.ytimg.com/vi/nKQQ1T6qRMQ/mqdefault.jpg" alt="Actie Films Nieuwe films 2014 Sniper Legacy   Best Fight, Actie, Oorlog, Hollywood Movie HD"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2331" title="Actie Films Nieuwe films 2014 Sniper Legacy   Best Fight, Actie, Oorlog, Hollywood Movie HD">Actie Films Nieuwe films 2014 Sniper Legacy   Best Fight, Actie, Oorlog, Hollywood Movie HD</a></td>
+      <td>01:23:25</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2331" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2332</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2332" title="Het Huis Anubis - De Terugkeer Van Sibuna - Hele Film"><img width="100px" src="https://i.ytimg.com/vi/PMtyzV15jDc/mqdefault.jpg" alt="Het Huis Anubis - De Terugkeer Van Sibuna - Hele Film"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2332" title="Het Huis Anubis - De Terugkeer Van Sibuna - Hele Film">Het Huis Anubis - De Terugkeer Van Sibuna - Hele Film</a></td>
+      <td>00:59:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2332" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2333</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2333" title="Now Is Good NL SUBS"><img width="100px" src="https://i.ytimg.com/vi/Iib7pvGKeoM/mqdefault.jpg" alt="Now Is Good NL SUBS"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2333" title="Now Is Good NL SUBS">Now Is Good NL SUBS</a></td>
+      <td>01:42:46</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2333" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2334</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2334" title="Stan Laurel - The Last Laugh (1990) - Complete - NL ondertiteld - Dutch subtitles"><img width="100px" src="https://i.ytimg.com/vi/E3fsfYb0RxU/mqdefault.jpg" alt="Stan Laurel - The Last Laugh (1990) - Complete - NL ondertiteld - Dutch subtitles"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2334" title="Stan Laurel - The Last Laugh (1990) - Complete - NL ondertiteld - Dutch subtitles">Stan Laurel - The Last Laugh (1990) - Complete - NL ondertiteld - Dutch subtitles</a></td>
+      <td>00:50:02</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2334" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2335</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2335" title="Turner & Hooch - NL subs"><img width="100px" src="https://i.ytimg.com/vi/jasTakf20c0/mqdefault.jpg" alt="Turner & Hooch - NL subs"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2335" title="Turner & Hooch - NL subs">Turner & Hooch - NL subs</a></td>
+      <td>01:39:34</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2335" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2336</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2336" title="JESUS Film Dutch-  De genade van onzen Heere Jezus Christus zij met u allen. Amen."><img width="100px" src="https://i.ytimg.com/vi/HCh9YeDQoGc/mqdefault.jpg" alt="JESUS Film Dutch-  De genade van onzen Heere Jezus Christus zij met u allen. Amen."></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2336" title="JESUS Film Dutch-  De genade van onzen Heere Jezus Christus zij met u allen. Amen.">JESUS Film Dutch-  De genade van onzen Heere Jezus Christus zij met u allen. Amen.</a></td>
+      <td>02:07:54</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2336" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2337</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2337" title="Step Up 2006 (Full Movie)"><img width="100px" src="https://i.ytimg.com/vi/fOCgK2ZuSSY/mqdefault.jpg" alt="Step Up 2006 (Full Movie)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2337" title="Step Up 2006 (Full Movie)">Step Up 2006 (Full Movie)</a></td>
+      <td>01:39:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2337" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2338</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2338" title="Now Is Good NL SUBS"><img width="100px" src="https://i.ytimg.com/vi/Iib7pvGKeoM/mqdefault.jpg" alt="Now Is Good NL SUBS"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2338" title="Now Is Good NL SUBS">Now Is Good NL SUBS</a></td>
+      <td>01:42:46</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2338" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2339</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2339" title="Koko Flanel (1990)"><img width="100px" src="https://i.ytimg.com/vi/6pOxtdgKGLQ/mqdefault.jpg" alt="Koko Flanel (1990)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2339" title="Koko Flanel (1990)">Koko Flanel (1990)</a></td>
+      <td>01:36:14</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2339" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2340</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2340" title="Nachtvlinder (1999) Film van Herman Van Veen"><img width="100px" src="https://i.ytimg.com/vi/oQuFxe-tjvo/mqdefault.jpg" alt="Nachtvlinder (1999) Film van Herman Van Veen"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2340" title="Nachtvlinder (1999) Film van Herman Van Veen">Nachtvlinder (1999) Film van Herman Van Veen</a></td>
+      <td>01:28:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2340" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2341</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2341" title="TV Special Bud Spencer & Terence Hill (Dutch)"><img width="100px" src="https://i.ytimg.com/vi/zd53N6KlLfU/mqdefault.jpg" alt="TV Special Bud Spencer & Terence Hill (Dutch)"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2341" title="TV Special Bud Spencer & Terence Hill (Dutch)">TV Special Bud Spencer & Terence Hill (Dutch)</a></td>
+      <td>00:47:49</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLs8JQ0JSWiIpUf3IAOOxuXOPNJOGPSrmT" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2341" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   </tbody>
+
+</table>
+</div>
+</body></html>

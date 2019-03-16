@@ -1,0 +1,1193 @@
+  <html>
+<head>
+      <title>Videos by List PLllLig86FOv17u3P4-xfH5fWMQzClYy_w</title>
+
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.w3schools.com/tags/demo_icon.gif" type="image/gif" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="views/videoDetail/mystyle.css">
+  <!-- Bootstrap v4.x stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<!-- bootstrap css theme -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/docs/css/bootstrap-v4.min.css">
+
+	<script src="https://mottie.github.io/tablesorter/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script>
+	<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.widgets.js"></script>
+
+	<!-- pager plugin -->
+	<link rel="stylesheet" href="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+	<script src="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+	<style>
+	.tablesorter-pager .btn-group-sm .btn {
+	  font-size: 1.2em; /* make pager arrows more visible */
+	}
+	</style>
+  <script>
+  $(function() {
+
+  $("table").tablesorter({
+    theme : "bootstrap",
+
+    widthFixed: true,
+
+    // widget code contained in the jquery.tablesorter.widgets.js file
+    // use the zebra stripe widget if you plan on hiding any rows (filter widget)
+    // the uitheme widget is NOT REQUIRED!
+    widgets : [ "filter", "columns", "zebra" ],
+
+    widgetOptions : {
+      // using the default zebra striping class name, so it actually isn't included in the theme variable above
+      // this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+      zebra : ["even", "odd"],
+
+      // class names added to columns when sorted
+      columns: [ "primary", "secondary", "tertiary" ],
+
+      // reset filters button
+      filter_reset : ".reset",
+
+      // extra css class name (string or array) added to the filter element (input or select)
+      filter_cssFilter: [
+        'form-control',
+        'form-control',
+        'form-control custom-select', // select needs custom class names :(
+        'form-control',
+        'form-control',
+        'form-control',
+        'form-control'
+      ]
+
+    }
+  })
+  .tablesorterPager({
+
+    // target the pager markup - see the HTML block below
+    container: $(".ts-pager"),
+
+    // target the pager page select dropdown - choose a page
+    cssGoto  : ".pagenum",
+
+    // remove rows from the table to speed up the sort of large tables.
+    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+    removeRows: false,
+
+    // output string - default is '{page}/{totalPages}';
+    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+
+  });
+
+});
+  </script></head>
+<body>
+
+<div class="contentItem">
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="/admin/">Home page</a></button>
+	  <div class="dropdown-content">
+		<a href="?c=listDetail&a=getAllWithView&k=1">get All ListDetail</a>
+		<a title="Them list videos moi" target="_blank" href="youtube/">Add New</a>
+		<a title="Xoa trung lap video + listDetail" target="_blank" href="removeDuplicate.php">Remove Duplicate</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Them list videos moi" target="_blank" href="youtube/">Add New By Youtube</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn"><a title="Tao Cache cho Videos + remove cac videos va list bi trung lap" target="_blank" href="/cache/">Gen cache</a></button>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">get All VideosDetail</button>
+	  <div class="dropdown-content">
+		<a href="?c=videoDetail&a=getAllWithView&k=0">get All VideosDetail(>10s)</a>
+		<a href="#">Add New</a>
+		<a href="#">Remove</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo CategoryID</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 Watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 New Videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 News (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 Beginnners (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 Listening (2)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 Gramar (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 Vocabulary (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 Reading (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 Writing (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 Pronunciation (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 Speaking (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 Exams (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 German Songs (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 German Film (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 German for Kids (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=15> 15 DSH Exams (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 Study in Germany (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 Life in Germany (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=18> 18 Numbers (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 Shopping (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 Food (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=21> 21 Jobs (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=22> 22 Health (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=23> 23 Weather (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=24> 24 Music (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=25> 25 Top playlist (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=26> 26 Tip learn German (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 Conversation (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 Travel (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=29> 29 Advance (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 Course (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 Story (0)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List tang dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 nachrichten (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=15> 15 dshexams (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 life (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=18> 18 numbers (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=21> 21 jobs (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=22> 22 health (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=23> 23 funny (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=24> 24 removeads (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=25> 25 top-playlist (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=26> 26 tip-learn-german (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=29> 29 advance (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (2)</a>	  </div>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Xep theo so luong List giam dan</button>
+	  <div class="dropdown-content">
+		<a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening (2)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 nachrichten (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=15> 15 dshexams (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 life (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=18> 18 numbers (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=21> 21 jobs (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=22> 22 health (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=23> 23 funny (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=24> 24 removeads (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=25> 25 top-playlist (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=26> 26 tip-learn-german (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=29> 29 advance (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course (0)</a><a href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story (0)</a>	  </div>
+	</div>
+	<br/>
+	<br/>
+	<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=0> 0 watched L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=1> 1 new_videos L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=2> 2 nachrichten L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=3> 3 beginnners L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=5> 5 gramar L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=6> 6 vocabulary L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=7> 7 reading L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=8> 8 writing L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=9> 9 pronunciation L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=10> 10 speaking L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=11> 11 exams L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=12> 12 songs L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=13> 13 film L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=14> 14 kids L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=15> 15 dshexams L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=16> 16 study L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=17> 17 life L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=18> 18 numbers L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=19> 19 shopping L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=20> 20 food L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=21> 21 jobs L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=22> 22 health L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=23> 23 funny L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=24> 24 removeads L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=25> 25 top-playlist L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=26> 26 tip-learn-german L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=27> 27 conversation L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=28> 28 travel L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=29> 29 advance L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=30> 30 course L(0) - v:(0)</a> |<a title='Số Lists của category này(0) - Số Videos của category này:(0)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=31> 31 story L(0) - v:(0)</a> |<a title='Số Lists của category này(2) - Số Videos của category này:(100)'href=?c=listDetail&a=getByCategoryIDWithCountWithView&k=4> 4 listening L(2) - v:(100)</a> |<br/>Số lượng Videos trong DB: 100 Videos<br/>Số lượng List trong DB: 2 Listt</div>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kw" value="" placeholder="search here">
+	<input type="submit" name="submit" value="search name videos">
+</form>
+
+
+<form method="get" style="margin-left: 100px;" >
+	<input type="text" name="kwl" value="" placeholder="search name List here">
+	<input type="submit" name="submit" value="search name List videos">
+</form><br/>
+<h1>Tat ca video co trong co so du lieu</h1>
+
+
+<table class="table table-bordered table-striped">
+  <thead> <!-- add class="thead-inverse" for a dark header -->
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video count</th>
+      <th>Add too</th>
+      <th>Xoa</th>
+	</tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>stt</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Video Duration</th>
+      <th>Add Videos to the List</th>
+      <th>Xoa</th>
+    </tr>
+    <tr>
+      <th colspan="7" class="ts-pager">
+        <div class="form-inline">
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary first" title="first">⇤</button>
+            <button type="button" class="btn btn-secondary prev" title="previous">←</button>
+          </div>
+          <span class="pagedisplay"></span>
+          <div class="btn-group btn-group-sm mx-1" role="group">
+            <button type="button" class="btn btn-secondary next" title="next">→</button>
+            <button type="button" class="btn btn-secondary last" title="last">⇥</button>
+          </div>
+          <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+          </select>
+          <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select page number"></select>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+	
+   <tr>
+      <td>1</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=1" title="13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống"><img width="100px" src="https://i.ytimg.com/vi/HLIfjz7SP4k/mqdefault.jpg" alt="13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=1" title="13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống">13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống</a></td>
+      <td>00:07:11</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=1" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>2</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=2" title="10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn"><img width="100px" src="https://i.ytimg.com/vi/wz48PDzOicI/mqdefault.jpg" alt="10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=2" title="10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn">10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn</a></td>
+      <td>00:08:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=2" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>3</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=3" title="10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn"><img width="100px" src="https://i.ytimg.com/vi/eQRRS4ByVNU/mqdefault.jpg" alt="10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=3" title="10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn">10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn</a></td>
+      <td>00:03:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=3" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>4</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=4" title="10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người"><img width="100px" src="https://i.ytimg.com/vi/QAw1dEqDzkQ/mqdefault.jpg" alt="10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=4" title="10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người">10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người</a></td>
+      <td>00:10:15</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=4" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>5</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=5" title="6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks"><img width="100px" src="https://i.ytimg.com/vi/ZJrTywz1juk/mqdefault.jpg" alt="6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=5" title="6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks">6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks</a></td>
+      <td>00:11:57</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=5" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>6</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=6" title="5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam"><img width="100px" src="https://i.ytimg.com/vi/oaWDvp-PoMY/mqdefault.jpg" alt="5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=6" title="5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam">5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam</a></td>
+      <td>00:08:07</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=6" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>7</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=7" title="Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?"><img width="100px" src="https://i.ytimg.com/vi/G8YBy5DQ8Uo/mqdefault.jpg" alt="Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=7" title="Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?">Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?</a></td>
+      <td>00:06:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=7" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>8</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=8" title="10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe"><img width="100px" src="https://i.ytimg.com/vi/Bur7yaF1pvU/mqdefault.jpg" alt="10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=8" title="10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe">10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe</a></td>
+      <td>00:08:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=8" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>9</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=9" title="10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết"><img width="100px" src="https://i.ytimg.com/vi/hysjpWdAuRA/mqdefault.jpg" alt="10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=9" title="10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết">10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết</a></td>
+      <td>00:07:36</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=9" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>10</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=10" title="Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1"><img width="100px" src="https://i.ytimg.com/vi/j1s7CgIHKw4/mqdefault.jpg" alt="Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=10" title="Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1">Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1</a></td>
+      <td>00:11:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=10" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>11</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=11" title="20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải"><img width="100px" src="https://i.ytimg.com/vi/7y6d0K5DFLQ/mqdefault.jpg" alt="20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=11" title="20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải">20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải</a></td>
+      <td>00:14:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=11" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>12</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=12" title="20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay"><img width="100px" src="https://i.ytimg.com/vi/llmww1B6OZY/mqdefault.jpg" alt="20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=12" title="20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay">20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay</a></td>
+      <td>00:14:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=12" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>13</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=13" title="Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng"><img width="100px" src="https://i.ytimg.com/vi/tI6ZN5B8IUw/mqdefault.jpg" alt="Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=13" title="Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng">Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng</a></td>
+      <td>00:07:10</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=13" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>14</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=14" title="9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng"><img width="100px" src="https://i.ytimg.com/vi/6-It83VWWY8/mqdefault.jpg" alt="9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=14" title="9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng">9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng</a></td>
+      <td>00:07:45</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=14" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>15</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=15" title="5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party"><img width="100px" src="https://i.ytimg.com/vi/yQOjCc7pLLY/mqdefault.jpg" alt="5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=15" title="5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party">5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party</a></td>
+      <td>00:04:03</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=15" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>16</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=16" title="90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này"><img width="100px" src="https://i.ytimg.com/vi/in4wUeSxI-g/mqdefault.jpg" alt="90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=16" title="90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này">90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này</a></td>
+      <td>00:07:28</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=16" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>17</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=17" title="5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước"><img width="100px" src="https://i.ytimg.com/vi/C4wDI9C0gwI/mqdefault.jpg" alt="5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=17" title="5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước">5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước</a></td>
+      <td>00:04:50</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=17" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>18</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=18" title="23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết"><img width="100px" src="https://i.ytimg.com/vi/gb6E6qNaen0/mqdefault.jpg" alt="23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=18" title="23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết">23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết</a></td>
+      <td>00:12:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=18" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>19</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=19" title="7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay"><img width="100px" src="https://i.ytimg.com/vi/OmLnU-3qNDg/mqdefault.jpg" alt="7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=19" title="7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay">7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay</a></td>
+      <td>00:07:40</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=19" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>20</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=20" title="99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó"><img width="100px" src="https://i.ytimg.com/vi/yFQZ3zWtA3w/mqdefault.jpg" alt="99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=20" title="99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó">99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó</a></td>
+      <td>00:06:51</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=20" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>21</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=21" title="10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie"><img width="100px" src="https://i.ytimg.com/vi/mhEDa3LocQk/mqdefault.jpg" alt="10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=21" title="10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie">10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie</a></td>
+      <td>00:08:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=21" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>22</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=22" title="10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng"><img width="100px" src="https://i.ytimg.com/vi/s2yJ3aF32rQ/mqdefault.jpg" alt="10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=22" title="10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng">10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng</a></td>
+      <td>00:06:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=22" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>23</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=23" title="Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút"><img width="100px" src="https://i.ytimg.com/vi/_tjX9Pn4anc/mqdefault.jpg" alt="Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=23" title="Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút">Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút</a></td>
+      <td>00:12:24</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=23" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>24</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=24" title="10 Thói quen hàng ngày mà 90% chúng ta làm sai cách"><img width="100px" src="https://i.ytimg.com/vi/ruVdfQAmw1M/mqdefault.jpg" alt="10 Thói quen hàng ngày mà 90% chúng ta làm sai cách"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=24" title="10 Thói quen hàng ngày mà 90% chúng ta làm sai cách">10 Thói quen hàng ngày mà 90% chúng ta làm sai cách</a></td>
+      <td>00:08:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=24" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>25</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=25" title="10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay"><img width="100px" src="https://i.ytimg.com/vi/ftry3E0ccgc/mqdefault.jpg" alt="10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=25" title="10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay">10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay</a></td>
+      <td>00:13:42</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=25" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>26</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=26" title="8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được"><img width="100px" src="https://i.ytimg.com/vi/mC5g7H2wdQ4/mqdefault.jpg" alt="8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=26" title="8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được">8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được</a></td>
+      <td>00:10:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=26" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>27</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=27" title="10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo"><img width="100px" src="https://i.ytimg.com/vi/Lkw5FLM_wh0/mqdefault.jpg" alt="10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=27" title="10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo">10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo</a></td>
+      <td>00:06:54</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=27" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>28</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=28" title="5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích"><img width="100px" src="https://i.ytimg.com/vi/sQ3Rw1bXnEc/mqdefault.jpg" alt="5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=28" title="5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích">5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích</a></td>
+      <td>00:08:51</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=28" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>29</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=29" title="10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai"><img width="100px" src="https://i.ytimg.com/vi/rGSMaulDpAI/mqdefault.jpg" alt="10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=29" title="10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai">10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai</a></td>
+      <td>00:13:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=29" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>30</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=30" title="5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ"><img width="100px" src="https://i.ytimg.com/vi/zsElNDa-v20/mqdefault.jpg" alt="5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=30" title="5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ">5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ</a></td>
+      <td>00:06:18</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=30" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>31</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=31" title="Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết"><img width="100px" src="https://i.ytimg.com/vi/m49gtkelpog/mqdefault.jpg" alt="Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=31" title="Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết">Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết</a></td>
+      <td>00:10:16</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=31" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>32</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=32" title="Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!"><img width="100px" src="https://i.ytimg.com/vi/Hw5nvkIWfa0/mqdefault.jpg" alt="Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=32" title="Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!">Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!</a></td>
+      <td>00:14:02</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=32" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>33</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=33" title="Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam"><img width="100px" src="https://i.ytimg.com/vi/qghgLmYVYDU/mqdefault.jpg" alt="Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=33" title="Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam">Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam</a></td>
+      <td>00:10:07</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=33" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>34</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=34" title="10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người"><img width="100px" src="https://i.ytimg.com/vi/aKsAnHNfGbA/mqdefault.jpg" alt="10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=34" title="10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người">10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người</a></td>
+      <td>00:12:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=34" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>35</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=35" title="15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ"><img width="100px" src="https://i.ytimg.com/vi/31iFbAOmnXI/mqdefault.jpg" alt="15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=35" title="15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ">15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ</a></td>
+      <td>00:11:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=35" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>36</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=36" title="10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày"><img width="100px" src="https://i.ytimg.com/vi/QG1T8mqGVY8/mqdefault.jpg" alt="10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=36" title="10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày">10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày</a></td>
+      <td>00:11:56</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=36" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>37</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=37" title="5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết"><img width="100px" src="https://i.ytimg.com/vi/WltrhJpaZh4/mqdefault.jpg" alt="5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=37" title="5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết">5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết</a></td>
+      <td>00:12:34</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=37" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>38</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=38" title="Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE"><img width="100px" src="https://i.ytimg.com/vi/7DFIqcO_y_g/mqdefault.jpg" alt="Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=38" title="Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE">Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE</a></td>
+      <td>00:11:24</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=38" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>39</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=39" title="7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng"><img width="100px" src="https://i.ytimg.com/vi/PaFNymrOLz8/mqdefault.jpg" alt="7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=39" title="7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng">7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng</a></td>
+      <td>00:06:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=39" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>40</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=40" title="Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì"><img width="100px" src="https://i.ytimg.com/vi/Hwh7Uyy8f84/mqdefault.jpg" alt="Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=40" title="Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì">Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì</a></td>
+      <td>00:11:33</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=40" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>41</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=41" title="Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết"><img width="100px" src="https://i.ytimg.com/vi/xD8Le874g2U/mqdefault.jpg" alt="Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=41" title="Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết">Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết</a></td>
+      <td>00:03:50</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=41" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>42</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=42" title="Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar"><img width="100px" src="https://i.ytimg.com/vi/hAvwJh69Slg/mqdefault.jpg" alt="Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=42" title="Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar">Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar</a></td>
+      <td>00:10:10</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=42" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>43</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=43" title="Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay"><img width="100px" src="https://i.ytimg.com/vi/6WYJnKS803g/mqdefault.jpg" alt="Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=43" title="Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay">Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay</a></td>
+      <td>00:11:52</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=43" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>44</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=44" title="Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -"><img width="100px" src="https://i.ytimg.com/vi/G22pxVKInME/mqdefault.jpg" alt="Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=44" title="Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -">Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -</a></td>
+      <td>00:06:14</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=44" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>45</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=45" title="10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết"><img width="100px" src="https://i.ytimg.com/vi/Tg-a0sWYGtY/mqdefault.jpg" alt="10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=45" title="10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết">10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết</a></td>
+      <td>00:12:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=45" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>46</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=46" title="Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn"><img width="100px" src="https://i.ytimg.com/vi/9hyPkeIcSl0/mqdefault.jpg" alt="Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=46" title="Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn">Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn</a></td>
+      <td>00:04:58</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=46" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>47</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=47" title="10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết"><img width="100px" src="https://i.ytimg.com/vi/FC1jVpAbP3Y/mqdefault.jpg" alt="10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=47" title="10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết">10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết</a></td>
+      <td>00:10:03</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=47" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>48</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=48" title="9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn"><img width="100px" src="https://i.ytimg.com/vi/CMlZP-M-W9k/mqdefault.jpg" alt="9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=48" title="9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn">9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn</a></td>
+      <td>00:10:28</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=48" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>49</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=49" title="6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày"><img width="100px" src="https://i.ytimg.com/vi/gDnBThWPMgA/mqdefault.jpg" alt="6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=49" title="6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày">6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày</a></td>
+      <td>00:05:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=49" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>50</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=50" title="10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng"><img width="100px" src="https://i.ytimg.com/vi/2EMxQDAJd5I/mqdefault.jpg" alt="10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=50" title="10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng">10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng</a></td>
+      <td>00:12:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=50" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>51</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=51" title="13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống"><img width="100px" src="https://i.ytimg.com/vi/HLIfjz7SP4k/mqdefault.jpg" alt="13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=51" title="13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống">13 Mẹo Hay Bạn Cần Phải Biết Khi Đi Du Lịch Hè Này  -Thủ Thuật Đời Sống</a></td>
+      <td>00:07:11</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=51" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>52</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=52" title="10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn"><img width="100px" src="https://i.ytimg.com/vi/wz48PDzOicI/mqdefault.jpg" alt="10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=52" title="10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn">10 Thủ Thuật Với Smartphone Giúp Cuộc Sống Trở Nên Dễ Dàng Hơn</a></td>
+      <td>00:08:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=52" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>53</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=53" title="10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn"><img width="100px" src="https://i.ytimg.com/vi/eQRRS4ByVNU/mqdefault.jpg" alt="10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=53" title="10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn">10 Thủ Thuật Hữu Ích Sẽ Thay Đổi Cuộc Sống Hàng Ngày Của Bạn</a></td>
+      <td>00:03:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=53" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>54</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=54" title="10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người"><img width="100px" src="https://i.ytimg.com/vi/QAw1dEqDzkQ/mqdefault.jpg" alt="10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=54" title="10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người">10 Kỹ Năng Sinh tồn mà trẻ nhỏ cần phải biết để sống sót trước những kẻ bắt cóc và buôn người</a></td>
+      <td>00:10:15</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=54" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>55</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=55" title="6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks"><img width="100px" src="https://i.ytimg.com/vi/ZJrTywz1juk/mqdefault.jpg" alt="6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=55" title="6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks">6 Món Đồ Chơi Đơn GIản Từ Đồ Vật Hàng Ngày Mà Bạn Có Thể Tự Làm Tại Nhà - DIY Life Hacks</a></td>
+      <td>00:11:57</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=55" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>56</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=56" title="5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam"><img width="100px" src="https://i.ytimg.com/vi/oaWDvp-PoMY/mqdefault.jpg" alt="5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=56" title="5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam">5 Sự Thật mà chúng ta cần phải biết về nghề cứu hỏa - Thật buồn cho người lính cứu hỏa ở Việt Nam</a></td>
+      <td>00:08:07</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=56" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>57</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=57" title="Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?"><img width="100px" src="https://i.ytimg.com/vi/G8YBy5DQ8Uo/mqdefault.jpg" alt="Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=57" title="Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?">Vị trí ngồi nào có tỷ lệ sống sót cao nhất trên phương tiện giao thông khi tai nạn xảy ra ?</a></td>
+      <td>00:06:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=57" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>58</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=58" title="10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe"><img width="100px" src="https://i.ytimg.com/vi/Bur7yaF1pvU/mqdefault.jpg" alt="10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=58" title="10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe">10 Bí Kíp Bá Đạo Giúp Bạn Không Bao Giờ Bị Say Tàu Xe</a></td>
+      <td>00:08:47</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=58" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>59</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=59" title="10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết"><img width="100px" src="https://i.ytimg.com/vi/hysjpWdAuRA/mqdefault.jpg" alt="10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=59" title="10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết">10 Mẹo Hay Trong Cuộc Sống Bạn Cần Phải Biết</a></td>
+      <td>00:07:36</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=59" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>60</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=60" title="Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1"><img width="100px" src="https://i.ytimg.com/vi/j1s7CgIHKw4/mqdefault.jpg" alt="Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=60" title="Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1">Những Trò Chơi 8x,9x ai cũng biết nhưng 10x thì 99% là chưa biết - Phần 1</a></td>
+      <td>00:11:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=60" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>61</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=61" title="20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải"><img width="100px" src="https://i.ytimg.com/vi/7y6d0K5DFLQ/mqdefault.jpg" alt="20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=61" title="20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải">20 Sai Lầm Hàng Ngày Có Hại Cho Sức Khỏe Mà Ai Cũng Mắc Phải</a></td>
+      <td>00:14:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=61" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>62</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=62" title="20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay"><img width="100px" src="https://i.ytimg.com/vi/llmww1B6OZY/mqdefault.jpg" alt="20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=62" title="20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay">20 Mẹo vặt cuộc sống tốt cho sức khỏe - Thay đổi hoàn toàn thói quen sai lầm bấy lâu nay</a></td>
+      <td>00:14:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=62" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>63</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=63" title="Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng"><img width="100px" src="https://i.ytimg.com/vi/tI6ZN5B8IUw/mqdefault.jpg" alt="Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=63" title="Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng">Tổng hợp 7 Kiểu Hôn Phổ Biến Nhất Thế Giới mà chắc chắn bạn chưa biết hết về chúng</a></td>
+      <td>00:07:10</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=63" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>64</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=64" title="9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng"><img width="100px" src="https://i.ytimg.com/vi/6-It83VWWY8/mqdefault.jpg" alt="9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=64" title="9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng">9 Thủ Thuật giúp bạn An Toàn hơn  trước các HACKER khi sử dụng internet công cộng</a></td>
+      <td>00:07:45</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=64" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>65</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=65" title="5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party"><img width="100px" src="https://i.ytimg.com/vi/yQOjCc7pLLY/mqdefault.jpg" alt="5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=65" title="5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party">5 Mẹo Vặt Thú Vị Với Quả Bóng Bay  - 5 Amazing Balloons Life Hacks for Party</a></td>
+      <td>00:04:03</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=65" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>66</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=66" title="90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này"><img width="100px" src="https://i.ytimg.com/vi/in4wUeSxI-g/mqdefault.jpg" alt="90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=66" title="90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này">90% chúng ta sẽ không thể giải thích được công dụng của những đồ vật này</a></td>
+      <td>00:07:28</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=66" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>67</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=67" title="5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước"><img width="100px" src="https://i.ytimg.com/vi/C4wDI9C0gwI/mqdefault.jpg" alt="5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=67" title="5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước">5 Kỹ năng sinh tồn giúp bạn sống sót được khi bị đuối nước</a></td>
+      <td>00:04:50</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=67" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>68</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=68" title="23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết"><img width="100px" src="https://i.ytimg.com/vi/gb6E6qNaen0/mqdefault.jpg" alt="23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=68" title="23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết">23 Tác Dụng Bất Ngờ Của Coca Cola Bạn Chưa Bao Giờ Biết</a></td>
+      <td>00:12:17</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=68" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>69</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=69" title="7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay"><img width="100px" src="https://i.ytimg.com/vi/OmLnU-3qNDg/mqdefault.jpg" alt="7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=69" title="7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay">7 Mẹo vặt hữu ích với chai nhựa bỏ đi sẽ giúp cuộc sống bạn thú vị hơn - Xem Gì Hôm Nay</a></td>
+      <td>00:07:40</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=69" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>70</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=70" title="99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó"><img width="100px" src="https://i.ytimg.com/vi/yFQZ3zWtA3w/mqdefault.jpg" alt="99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=70" title="99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó">99% chúng ta vứt đi một thứ vô cùng hữu ích và cùng khám phá 10 công dụng của nó</a></td>
+      <td>00:06:51</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=70" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>71</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=71" title="10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie"><img width="100px" src="https://i.ytimg.com/vi/mhEDa3LocQk/mqdefault.jpg" alt="10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=71" title="10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie">10 Phương Tiện Lý Tưởng giúp bạn chạy trốn khỏi Đại Dịch Zombie</a></td>
+      <td>00:08:27</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=71" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>72</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=72" title="10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng"><img width="100px" src="https://i.ytimg.com/vi/s2yJ3aF32rQ/mqdefault.jpg" alt="10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=72" title="10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng">10 Đồ Dùng Thông dụng mà 95% chúng ta không hề biết công dụng của chúng</a></td>
+      <td>00:06:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=72" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>73</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=73" title="Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút"><img width="100px" src="https://i.ytimg.com/vi/_tjX9Pn4anc/mqdefault.jpg" alt="Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=73" title="Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút">Giải Mã 8 Ảo Thuật Kinh Điển nhất mọi thời đại chỉ với 10 phút</a></td>
+      <td>00:12:24</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=73" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>74</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=74" title="10 Thói quen hàng ngày mà 90% chúng ta làm sai cách"><img width="100px" src="https://i.ytimg.com/vi/ruVdfQAmw1M/mqdefault.jpg" alt="10 Thói quen hàng ngày mà 90% chúng ta làm sai cách"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=74" title="10 Thói quen hàng ngày mà 90% chúng ta làm sai cách">10 Thói quen hàng ngày mà 90% chúng ta làm sai cách</a></td>
+      <td>00:08:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=74" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>75</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=75" title="10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay"><img width="100px" src="https://i.ytimg.com/vi/ftry3E0ccgc/mqdefault.jpg" alt="10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=75" title="10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay">10 Mẹo sinh tồn tăng khả năng sống sót khi bạn bay trên máy bay</a></td>
+      <td>00:13:42</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=75" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>76</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=76" title="8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được"><img width="100px" src="https://i.ytimg.com/vi/mC5g7H2wdQ4/mqdefault.jpg" alt="8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=76" title="8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được">8 Kỷ Lục thế giới của trò chơi điện tử mà bạn sẽ không bao giờ có thể phá được</a></td>
+      <td>00:10:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=76" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>77</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=77" title="10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo"><img width="100px" src="https://i.ytimg.com/vi/Lkw5FLM_wh0/mqdefault.jpg" alt="10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=77" title="10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo">10 MẸO đơn giản giúp việc học ở trường dễ như ăn kẹo</a></td>
+      <td>00:06:54</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=77" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>78</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=78" title="5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích"><img width="100px" src="https://i.ytimg.com/vi/sQ3Rw1bXnEc/mqdefault.jpg" alt="5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=78" title="5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích">5 Ảo Thuật kinh điển bí ẩn nhiều năm cuối cùng cũng có lời giải thích</a></td>
+      <td>00:08:51</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=78" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>79</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=79" title="10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai"><img width="100px" src="https://i.ytimg.com/vi/rGSMaulDpAI/mqdefault.jpg" alt="10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=79" title="10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai">10 Mẹo Sinh Tồn Sai Lầm mà 90% Người Lớn vẫn nhầm lẫn và dạy sai</a></td>
+      <td>00:13:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=79" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>80</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=80" title="5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ"><img width="100px" src="https://i.ytimg.com/vi/zsElNDa-v20/mqdefault.jpg" alt="5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=80" title="5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ">5 Điều Chỉ Đàn Ông Làm Được Khiến Phụ Nữ Phải Ghen Tỵ</a></td>
+      <td>00:06:18</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=80" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>81</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=81" title="Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết"><img width="100px" src="https://i.ytimg.com/vi/m49gtkelpog/mqdefault.jpg" alt="Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=81" title="Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết">Top 10 Món Ăn Tết Âm Lịch khiến bạn béo phì nhanh chóng mà bạn chưa chắc đã biết</a></td>
+      <td>00:10:16</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=81" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>82</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=82" title="Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!"><img width="100px" src="https://i.ytimg.com/vi/Hw5nvkIWfa0/mqdefault.jpg" alt="Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=82" title="Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!">Top 5 Ngôi Sao Việt cực lầy khiến bạn phải cạn lời !!!!</a></td>
+      <td>00:14:02</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=82" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>83</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=83" title="Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam"><img width="100px" src="https://i.ytimg.com/vi/qghgLmYVYDU/mqdefault.jpg" alt="Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=83" title="Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam">Top 10 trường THPT nhiều Con Nhà Người Ta nhất Việt Nam</a></td>
+      <td>00:10:07</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=83" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>84</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=84" title="10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người"><img width="100px" src="https://i.ytimg.com/vi/aKsAnHNfGbA/mqdefault.jpg" alt="10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=84" title="10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người">10 mẹo SINH TỒN hay giúp bạn sống sót đối đầu động vật nguy hiểm chết người</a></td>
+      <td>00:12:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=84" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>85</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=85" title="15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ"><img width="100px" src="https://i.ytimg.com/vi/31iFbAOmnXI/mqdefault.jpg" alt="15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=85" title="15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ">15 Sản Phẩm sinh ra không phải mục đích sử dụng như bây giờ đến nhà sáng chế cũng phải bất ngờ</a></td>
+      <td>00:11:29</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=85" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>86</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=86" title="10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày"><img width="100px" src="https://i.ytimg.com/vi/QG1T8mqGVY8/mqdefault.jpg" alt="10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=86" title="10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày">10 Bí Kíp sinh tồn sẽ cứu bạn và người xung quanh tránh khỏi tử thần trong cuộc sống hằng ngày</a></td>
+      <td>00:11:56</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=86" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>87</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=87" title="5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết"><img width="100px" src="https://i.ytimg.com/vi/WltrhJpaZh4/mqdefault.jpg" alt="5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=87" title="5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết">5 Điều Coffe số 1 thế giới Starbucks luôn giấu kín không cho chúng ta biết</a></td>
+      <td>00:12:34</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=87" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>88</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=88" title="Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE"><img width="100px" src="https://i.ytimg.com/vi/7DFIqcO_y_g/mqdefault.jpg" alt="Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=88" title="Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE">Top 10 Youtuber nổi tiếng có khả năng đặc biệt giúp họ sống sót trong đại dịch ZOMBIE</a></td>
+      <td>00:11:24</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=88" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>89</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=89" title="7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng"><img width="100px" src="https://i.ytimg.com/vi/PaFNymrOLz8/mqdefault.jpg" alt="7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=89" title="7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng">7 Câu truyện Xàm Xí hoang đường nhưng mọi người trên thế giới vẫn tin là đúng</a></td>
+      <td>00:06:38</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=89" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>90</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=90" title="Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì"><img width="100px" src="https://i.ytimg.com/vi/Hwh7Uyy8f84/mqdefault.jpg" alt="Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=90" title="Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì">Khám phá công dụng của 10 đồ vật mà 99% chúng ta không biết tác dụng của chúng làm gì</a></td>
+      <td>00:11:33</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=90" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>91</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=91" title="Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết"><img width="100px" src="https://i.ytimg.com/vi/xD8Le874g2U/mqdefault.jpg" alt="Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=91" title="Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết">Thủ thuật xem chỉ tay đơn giản chính xác mà không phải ai cũng biết</a></td>
+      <td>00:03:50</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=91" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>92</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=92" title="Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar"><img width="100px" src="https://i.ytimg.com/vi/hAvwJh69Slg/mqdefault.jpg" alt="Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=92" title="Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar">Top 10 Thủ Thuật Siêu Hay mà các tay chơi thường dùng để tán gái khi lên Bar</a></td>
+      <td>00:10:10</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=92" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>93</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=93" title="Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay"><img width="100px" src="https://i.ytimg.com/vi/6WYJnKS803g/mqdefault.jpg" alt="Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=93" title="Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay">Đọc suy nghĩ người khác chính xác nhất qua 10 ngôn ngữ cơ thể  - Xem Gì Hôm Nay</a></td>
+      <td>00:11:52</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=93" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>94</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=94" title="Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -"><img width="100px" src="https://i.ytimg.com/vi/G22pxVKInME/mqdefault.jpg" alt="Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=94" title="Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -">Bạn Thực Sự Bao Nhiêu Tuổi?- Đoán Tuổi Tinh Thần Thông Qua Bài Test Màu Sắc -</a></td>
+      <td>00:06:14</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=94" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>95</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=95" title="10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết"><img width="100px" src="https://i.ytimg.com/vi/Tg-a0sWYGtY/mqdefault.jpg" alt="10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=95" title="10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết">10 bí kíp sinh tồn sẽ cứu sống bạn trong thời khắc sinh tử mà bạn nên biết</a></td>
+      <td>00:12:13</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=95" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>96</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=96" title="Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn"><img width="100px" src="https://i.ytimg.com/vi/9hyPkeIcSl0/mqdefault.jpg" alt="Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=96" title="Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn">Top 10 Mẹo Vặt hay trong cuộc sống hằng ngày mà các bậc phụ huynh chưa chắc đã biết để dạy bạn</a></td>
+      <td>00:04:58</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=96" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>97</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=97" title="10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết"><img width="100px" src="https://i.ytimg.com/vi/FC1jVpAbP3Y/mqdefault.jpg" alt="10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=97" title="10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết">10 Thủ Thuật Phát Hiện Hàng Giả Mà Rất Ít Người Biết</a></td>
+      <td>00:10:03</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=97" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>98</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=98" title="9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn"><img width="100px" src="https://i.ytimg.com/vi/CMlZP-M-W9k/mqdefault.jpg" alt="9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=98" title="9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn">9 Bài Trắc Nghiệm Tâm Lý Chính Xác để phán đoán tính cách của con người bạn</a></td>
+      <td>00:10:28</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=98" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>99</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=99" title="6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày"><img width="100px" src="https://i.ytimg.com/vi/gDnBThWPMgA/mqdefault.jpg" alt="6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=99" title="6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày">6 Điều Mà Ai Cũng Lầm Tưởng Về Đồ Vật Hàng Ngày</a></td>
+      <td>00:05:09</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=99" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   	
+   <tr>
+      <td>100</td>
+      <td><a href="?c=videoDetail&a=getByIdWithView&k=100" title="10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng"><img width="100px" src="https://i.ytimg.com/vi/2EMxQDAJd5I/mqdefault.jpg" alt="10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng"></a></td>
+      <td><b>Video :</b><a href="?c=videoDetail&a=getByIdWithView&k=100" title="10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng">10 Thủ Thuật đơn giản nhưng hiệu quả bất ngờ vô cùng ấn tượng</a></td>
+      <td>00:12:32</td>
+      <td><a target="_blank" href="youtube/?getfromlist=PLllLig86FOv17u3P4-xfH5fWMQzClYy_w" title="Add more video to this list">Add More Videos to the List</a></td>
+      <td><a class="delete" href="?c=videoDetail&a=removeById&k=100" title="delete" onclick="return confirm('Are you sure?');">Delete</a></td>
+   </tr>
+   
+   </tbody>
+
+</table>
+</div>
+</body></html>

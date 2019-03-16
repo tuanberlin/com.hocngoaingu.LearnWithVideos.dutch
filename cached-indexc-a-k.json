@@ -1,0 +1,21 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.w3schools.com/tags/demo_icon.gif" type="image/gif" sizes="16x16">
+	<title> Login </title>
+	<link rel="stylesheet" href="templates/login.css">
+	 <script src="templates/login.js"></script> 
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form" method="POST" action="">
+      <input name="username" type="text" placeholder="username" value = ""/>
+      <input name="password" type="password" placeholder="password" value = ""/>
+      <button>login</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
